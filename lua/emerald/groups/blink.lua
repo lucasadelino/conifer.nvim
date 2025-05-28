@@ -6,7 +6,7 @@ function M.highlight(palette, _)
     BlinkCmpMenuBorder = { fg = palette.white },
     BlinkCmpMenuSelection = { bg = palette.accent },
     BlinkCmpLabel = { fg = palette.white },
-    BlinkCmpLabelMatch = { fg = palette.orange },
+    BlinkCmpLabelMatch = { fg = palette.red },
     BlinkCmpLabelDetail = { fg = palette.medium_gray },
     BlinkCmpLabelDeprecated = { fg = palette.medium_gray, strikethrough = true },
     BlinkCmpLabelDescription = { fg = palette.medium_gray },

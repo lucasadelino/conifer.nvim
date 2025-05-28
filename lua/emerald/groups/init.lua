@@ -19,6 +19,7 @@ return {
   require "emerald.groups.blink",
   require "emerald.groups.nvim-tree",
   require "emerald.groups.orgmode",
+  require "emerald.groups.snacks",
   require "emerald.groups.statusline",
   require "emerald.groups.telescope",
   require "emerald.groups.treesitter",
