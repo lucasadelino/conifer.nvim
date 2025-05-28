@@ -1,0 +1,64 @@
+conifer.txt
+
+================================================================================
+CONTENTS                                                *conifer-contents*
+
+1. Conifer...............................................|conifer-conifer|
+    1.1. Usage.............................................|conifer-usage|
+    1.2. Supported Plugins.....................|conifer-supported_plugins|
+
+================================================================================
+CONIFER                                                  *conifer-conifer*
+
+An attempt at a color scheme that does not look like a clown puked up the source code.
+
+
+
+--------------------------------------------------------------------------------
+USAGE                                                      *conifer-usage*
+
+To enable this colorscheme:
+>
+    colorscheme conifer
+<
+>
+    vim.cmd[[colorscheme conifer]]
+<
+
+To override the default settings you need to call setup before enabling the
+colorscheme. conifer will use these settings, unless you call setup
+and override these.
+>
+    require("conifer").setup({
+      transparent = false, -- Enable this to disable the bg color
+      styles = { 
+        -- You can set any of the style values specified for `:h nvim_set_hl`
+        comments = {},
+        keywords = {},
+        functions = {},
+        variables = {},
+        type = { bold = true },
+      },
+    })
+<
+
+--------------------------------------------------------------------------------
+SUPPORTED PLUGINS                              *conifer-supported_plugins*
+
+*   Alpha
+*   Git
+*   Hop
+*   Leap
+*   Lir
+*   LSP
+*   Lualine
+*   Markdown
+*   Neogit
+*   NvimCmp
+*   NvimTree
+*   Telescope
+*   Treesitter
+*   StatusLine (the default non custom one)
+*   WhichKey
+*   Mini.statusline
+*   DiffView

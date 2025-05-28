@@ -1,0 +1,52 @@
+local M = {}
+
+function M.highlight(palette)
+  return {
+    NeogitBranch = { fg = palette.leaf, bold = true },
+    NeogitChangeModified = { fg = palette.sign_change },
+    NeogitChangeMstaged = { fg = palette.leaf },
+    NeogitChangeNewFile = { fg = palette.leaf },
+    NeogitDiffAdd = { fg = palette.sign_add, bg = palette.accent_green },
+    NeogitDiffAddHighlight = {
+      fg = palette.sign_add,
+      bg = palette.accent_green,
+    },
+    NeogitDiffAdditions = { fg = palette.sign_add },
+    NeogitDiffContextHighlight = { fg = palette.fg, bg = palette.coal },
+    NeogitDiffDelete = { fg = palette.sign_delete, bg = palette.accent_red },
+    NeogitDiffDeleteHighlight = {
+      fg = palette.sign_delete,
+      bg = palette.accent_red,
+    },
+    NeogitDiffDeletions = { fg = palette.sign_delete },
+    NeogitGraphAuthor = { fg = palette.leaf },
+    NeogitGraphBoldPurple = { fg = palette.leaf },
+    NeogitGraphBoldRed = { fg = palette.mist },
+    NeogitGraphBoldYellow = { fg = palette.bark },
+    NeogitGraphPurple = { fg = palette.leaf },
+    NeogitGraphRed = { fg = palette.mist },
+    NeogitGraphYellow = { fg = palette.bark },
+    NeogitHunkHeader = { fg = palette.fg, bg = palette.coal },
+    NeogitHunkHeaderHighlight = { fg = palette.fg, bg = palette.shade },
+    NeogitNotificationError = { fg = palette.sign_delete },
+    NeogitNotificationInfo = { fg = palette.sign_add },
+    NeogitNotificationWarning = { fg = palette.warning },
+    NeogitPopupActionKey = { fg = palette.leaf },
+    NeogitPopupConfigKey = { fg = palette.orange },
+    NeogitPopupOptionKey = { fg = palette.leaf },
+    NeogitPopupSectionTitle = { fg = palette.leaf, bold = true },
+    NeogitPopupSwitchKey = { fg = palette.leaf },
+    NeogitRecentcommits = { fg = palette.fg, bold = true },
+    NeogitRemote = { fg = palette.moss, bold = true },
+    NeogitSectionHeader = { fg = palette.fg, bold = true },
+    NeogitStagedchanges = { fg = palette.leaf, bold = true },
+    NeogitSubtleText = { link = "Comment" },
+    NeogitTagDistance = { fg = palette.purple },
+    NeogitUnmergedchanges = { fg = palette.fog, bold = true },
+    NeogitUnpulledchanges = { fg = palette.orange, bold = true },
+    NeogitUnstagedchanges = { fg = palette.sign_change, bold = true },
+    NeogitUntrackedFiles = { fg = palette.moss, bold = true },
+  }
+end
+
+return M
