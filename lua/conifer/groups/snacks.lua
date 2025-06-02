@@ -5,7 +5,7 @@ function M.highlight(palette)
     -- SnacksDashboardDesc = { fg = palette.green },
     -- SnacksDashboardFooter = { fg = palette.gray },
     -- SnacksDashboardIcon = { fg = palette.fg },
-    SnacksDashboardKey = { fg = palette.green },
+    SnacksDashboardKey = { fg = palette.leaf },
     -- SnacksDashboardSpecial = { fg = palette.fg },
     -- SnacksIndentScope = { fg = palette.fg },
     SnacksPickerMatch = { bold = true, underline = true },

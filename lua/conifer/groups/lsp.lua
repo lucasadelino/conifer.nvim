@@ -7,11 +7,11 @@ function M.highlight(palette, opts)
     LspReferenceWrite = { bg = "#36383f" },
     DiagnosticError = { fg = palette.error },
     DiagnosticWarn = { fg = palette.warning },
-    DiagnosticInfo = { fg = palette.info },
+    DiagnosticInfo = { fg = palette.blue },
     DiagnosticHint = { fg = palette.hint },
     DiagnosticVirtualTextError = { fg = palette.error },
     DiagnosticVirtualTextWarn = { fg = palette.warning },
-    DiagnosticVirtualTextInfo = { fg = palette.info },
+    DiagnosticVirtualTextInfo = { fg = palette.blue },
     DiagnosticVirtualTextHint = { fg = palette.hint },
     DiagnosticUnderlineError = vim.tbl_extend(
       "force",
@@ -25,7 +25,7 @@ function M.highlight(palette, opts)
     ),
     DiagnosticUnderlineInfo = vim.tbl_extend(
       "force",
-      { sp = palette.info },
+      { sp = palette.blue },
       opts.styles.lsp
     ),
     DiagnosticUnderlineHint = vim.tbl_extend(

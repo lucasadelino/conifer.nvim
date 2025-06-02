@@ -2,11 +2,11 @@ local M = {}
 
 function M.highlight(palette)
   return {
-    WhichKey = { fg = palette.fg },
+    WhichKey = { fg = palette.frost },
     WhichKeySeparator = { fg = palette.light_gray },
-    WhichKeyGroup = { fg = palette.green },
+    WhichKeyGroup = { fg = palette.leaf },
     WhichKeyDesc = { fg = palette.light_gray },
-    WhichKeyFloat = { bg = palette.bg },
+    WhichKeyFloat = { bg = palette.raven },
   }
 end
 

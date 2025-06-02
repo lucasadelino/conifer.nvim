@@ -2,11 +2,11 @@ local M = {}
 
 function M.highlight(palette, _)
   return {
-    BlinkCmpMenu = { fg = palette.medium_gray },
+    BlinkCmpMenu = { fg = palette.medium_gray, bg = palette.alt_bg },
     BlinkCmpMenuBorder = { fg = palette.white },
     BlinkCmpMenuSelection = { bg = palette.accent },
     BlinkCmpLabel = { fg = palette.white },
-    BlinkCmpLabelMatch = { fg = palette.red },
+    BlinkCmpLabelMatch = { fg = palette.bark },
     BlinkCmpLabelDetail = { fg = palette.medium_gray },
     BlinkCmpLabelDeprecated = { fg = palette.medium_gray, strikethrough = true },
     BlinkCmpLabelDescription = { fg = palette.medium_gray },
