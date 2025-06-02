@@ -1,62 +1,52 @@
-local colors = {
-  frost = "#D6D6D6", -- alternatives: wolf; timberwolf
-  raven = "#151515", -- bg; alternatives: coal
+-- stylua: ignore
 
-  bark = "#B49273", -- red
-  leaf = "#85B884", -- green
-  moss = "#60b197", -- cyan
-  mist = "#576f82", -- gray_blue
-  brook = "#A2B5C1", -- medium_gray_blue
-  dew = "#C3D2D5", -- light_gray_blue
-  stone = "#BDBBAF", -- pale_yellow
+local colors = {
+  -- Code colors
+  snow   = "#E1E1E1", -- white
+  frost  = "#D6D6D6", -- fg
+  bone   = "#C1C1C1", -- lighter_gray 
+  gravel = "#AFAFAF", -- light_gray 
+  ash    = "#727272", -- medium_gray
+  slate  = "#373737", -- gray
+  shade  = "#202020", -- accent
+  coal   = "#171717", -- alt_bg 
+  raven  = "#151515", -- bg 
+  lichen = "#ABBAB5", -- faded_green
+  bud    = "#C7FFBA", -- light_green
+  leaf   = "#85B884", -- green
+  moss   = "#60b197", -- cyan
+  dew    = "#C3D2D5", -- light_gray_blue
+  mist   = "#A2B5C1", -- medium_gray_blue
+  brook  = "#BAD7FF", -- blue 
+  fog    = "#576f82", -- gray_blue
+  stone  = "#BDBBAF", -- pale_yellow
+  bark   = "#B49273", -- red
   --
   none = "NONE",
-  alt_bg = "#171717",
-  accent = "#202020",
-  white = "#E1E1E1",
-  gray = "#373737",
-  medium_gray = "#727272",
-  light_gray = "#AFAFAF",
-  -- lighter_gray = "#C3C3C3",
-  lighter_gray = "#C1C1C1",
-  -- lighter_gray = "#BEBEBE",
-  -- lighter_gray = "#B9B9B9",
-  blue = "#BAD7FF",
-  -- gray_blue = "#7E97AB",
-  -- light_gray_blue = "#B3C2CC", -- brook
-  -- light_gray_blue = "#C3CED5", -- brook
-  -- light_gray_blue = "#C3CFD5", -- brook
-  -- light_gray_blue = "#C3D2D5", -- brook
-  -- medium_gray_green = "#A3C2A5",
-  -- light_gray_green = "#C3D5C6",
   light_gray_green = "#C3D3D2",
-  -- medium_gray_green = "#A3BFAC",
-  -- medium_gray_green = "#A3BCB3",
-  -- medium_gray_green = "#A3B9BA",
-  -- medium_gray_green = "#A3B7BE",
   cyan = "#60b197",
-  -- red = "#B48F71",
   green = "#85B884", -- leaf
-  light_green = "#C7FFBA",
-  faded_green = "#ABBAB5",
-  -- yellow = "#F4BF75",
-  yellow = "#E0BE7D",
-  orange = "#FFA557",
+  --
+  -- UI Colors
+  -- azure = "#5E97C7",
+  azure = "#6196C2",
+  blue = "#3E61C1",
+  -- yellow = "#E0BE7D",
+  yellow  = "#FFE591",
+  red = "#D7867D",
+  -- orange = "#F5A967",
+  orange = "#F6AD6C",
   purple = "#AA749F",
+
+  bright_orange = "#FFA557",
+  --
   magenta = "#AA759F",
   cursor_fg = "#151515",
-  -- cursor_bg = "#D0D0D0",
-  -- cursor_bg = "#BDBBAF",
   cursor_bg = "#984936",
   sign_add = "#85B884",
   sign_change = "#DBBB7F",
-  -- sign_change = "#6DB7A3",
-  -- sign_change = "#5E97C7",
-  -- sign_change = "#6196C2",
   sign_delete = "#D7867D",
   error = "#D7867D",
-  -- error = "#984936",
-  -- warning = "#ab8550",
   warning = "#F4BF75",
   info = "#ab8550",
   hint = "#576f82",
