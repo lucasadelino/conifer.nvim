@@ -1,5 +1,7 @@
 return {
   require "conifer.groups.alpha",
+  require "conifer.groups.bufferline",
+  require "conifer.groups.copilot-chat",
   require "conifer.groups.dadbod-ui",
   require "conifer.groups.dapui",
   require "conifer.groups.git",
@@ -11,6 +13,7 @@ return {
   require "conifer.groups.lsp",
   require "conifer.groups.markdown",
   require "conifer.groups.mason",
+  require "conifer.groups.mini-icons",
   require "conifer.groups.mini-statusline",
   require "conifer.groups.neogit",
   require "conifer.groups.neotest",
@@ -23,6 +26,7 @@ return {
   require "conifer.groups.statusline",
   require "conifer.groups.telescope",
   require "conifer.groups.treesitter",
+  require "conifer.groups.todo-comments",
   require "conifer.groups.whichkey",
   require "conifer.groups.diffview",
 }

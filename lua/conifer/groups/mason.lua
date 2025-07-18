@@ -11,7 +11,7 @@ function M.highlight(palette, opts)
     },
     MasonHeaderSecondary = {
       bold = true,
-      fg = palette.light_gray,
+      fg = palette.gravel,
       bg = palette.raven,
       default = true,
     },
@@ -36,10 +36,10 @@ function M.highlight(palette, opts)
       default = true,
     },
     MasonLink = { link = "MasonHighlight", default = true },
-    MasonMuted = { fg = palette.medium_gray, default = true },
-    MasonMutedBlock = { bg = palette.accent, fg = palette.light_gray, default = true },
+    MasonMuted = { fg = palette.ash, default = true },
+    MasonMutedBlock = { bg = palette.shade, fg = palette.gravel, default = true },
     MasonMutedBlockBold = {
-      bg = palette.gray,
+      bg = palette.slate,
       fg = palette.raven,
       bold = true,
       default = true,

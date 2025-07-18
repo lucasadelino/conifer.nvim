@@ -1,6 +1,6 @@
 local M = {}
 
-function M.highlight(palette, opts)
+function M.highlight(palette)
   return {
     NoiceCmdlinePopupTitle = { link = "FloatBorder", default = true },
     NoiceCmdlinePrompt = { link = "FloatBorder", default = true },
@@ -9,7 +9,8 @@ function M.highlight(palette, opts)
     NoiceCmdlineIcon = { link = "FloatBorder", default = true },
     NoiceCmdlineIconSearch = { link = "FloatBorder", default = true },
     NoiceCmdlinePopupBorderSearch = { link = "FloatBorder", default = true },
-    NoiceVirtualText = { fg = palette.medium_gray, default = true },
+    NoiceConfirmBorder = { fg = palette.bark },
+    NoiceVirtualText = { fg = palette.ash, default = true },
   }
 end
 

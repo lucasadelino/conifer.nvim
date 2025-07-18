@@ -1,10 +1,10 @@
 local M = {}
 
-function M.highlight(palette)
+function M.highlight(aspects)
   return {
-    NotificationInfo = { fg = palette.frost, bg = palette.alt_bg },
-    NotificationWarning = { fg = palette.warning, bg = palette.alt_bg },
-    NotificationError = { fg = palette.sign_delete, bg = palette.alt_bg },
+    NotificationInfo = { fg = aspects.frost, bg = aspects.coal },
+    NotificationWarning = { fg = aspects.warning, bg = aspects.coal },
+    NotificationError = { fg = aspects.sign_delete, bg = aspects.coal },
   }
 end
 

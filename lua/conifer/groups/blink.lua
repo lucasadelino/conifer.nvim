@@ -2,17 +2,17 @@ local M = {}
 
 function M.highlight(palette, _)
   return {
-    BlinkCmpMenu = { fg = palette.medium_gray, bg = palette.alt_bg },
-    BlinkCmpMenuBorder = { fg = palette.white },
-    BlinkCmpMenuSelection = { bg = palette.accent },
-    BlinkCmpLabel = { fg = palette.white },
+    BlinkCmpMenu = { fg = palette.ash, bg = palette.coal },
+    BlinkCmpMenuBorder = { fg = palette.snow },
+    BlinkCmpMenuSelection = { bg = palette.shade },
+    BlinkCmpLabel = { fg = palette.snow },
     BlinkCmpLabelMatch = { fg = palette.bark },
-    BlinkCmpLabelDetail = { fg = palette.medium_gray },
-    BlinkCmpLabelDeprecated = { fg = palette.medium_gray, strikethrough = true },
-    BlinkCmpLabelDescription = { fg = palette.medium_gray },
-    BlinkCmpKind = { fg = palette.light_gray },
-    BlinkCmpSource = { fg = palette.medium_gray },
-    BlinkCmpGhostText = { fg = palette.medium_gray },
+    BlinkCmpLabelDetail = { fg = palette.ash },
+    BlinkCmpLabelDeprecated = { fg = palette.ash, strikethrough = true },
+    BlinkCmpLabelDescription = { fg = palette.ash },
+    BlinkCmpKind = { fg = palette.gravel },
+    BlinkCmpSource = { fg = palette.ash },
+    BlinkCmpGhostText = { fg = palette.ash },
   }
 end
 

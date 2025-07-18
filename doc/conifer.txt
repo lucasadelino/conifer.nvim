@@ -1,35 +1,35 @@
-no-clown-fiesta.txt
+conifer.txt
 
 ================================================================================
-CONTENTS                                                *no-clown-fiesta-contents*
+CONTENTS                                                *conifer-contents*
 
-1. No Clown Fiesta...............................|no-clown-fiesta-no_clown_fiesta|
-    1.1. Usage.............................................|no-clown-fiesta-usage|
-    1.2. Supported Plugins.....................|no-clown-fiesta-supported_plugins|
+1. Conifer...............................................|conifer-conifer|
+    1.1. Usage.............................................|conifer-usage|
+    1.2. Supported Plugins.....................|conifer-supported_plugins|
 
 ================================================================================
-NO CLOWN FIESTA                                  *no-clown-fiesta-no_clown_fiesta*
+CONIFER                                                  *conifer-conifer*
 
 An attempt at a color scheme that does not look like a clown puked up the source code.
 
 
 
 --------------------------------------------------------------------------------
-USAGE                                                      *no-clown-fiesta-usage*
+USAGE                                                      *conifer-usage*
 
 To enable this colorscheme:
 >
-    colorscheme no-clown-fiesta
+    colorscheme conifer
 <
 >
-    vim.cmd[[colorscheme no-clown-fiesta]]
+    vim.cmd[[colorscheme conifer]]
 <
 
 To override the default settings you need to call setup before enabling the
-colorscheme. No-clown-fiesta will use these settings, unless you call setup
+colorscheme. conifer will use these settings, unless you call setup
 and override these.
 >
-    require("no-clown-fiesta").setup({
+    require("conifer").setup({
       transparent = false, -- Enable this to disable the bg color
       styles = { 
         -- You can set any of the style values specified for `:h nvim_set_hl`
@@ -43,7 +43,7 @@ and override these.
 <
 
 --------------------------------------------------------------------------------
-SUPPORTED PLUGINS                              *no-clown-fiesta-supported_plugins*
+SUPPORTED PLUGINS                              *conifer-supported_plugins*
 
 *   Alpha
 *   Git

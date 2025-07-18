@@ -8,11 +8,11 @@ function M.highlight(palette, opts)
     DiagnosticError = { fg = palette.error },
     DiagnosticWarn = { fg = palette.warning },
     DiagnosticInfo = { fg = palette.blue },
-    DiagnosticHint = { fg = palette.hint },
-    DiagnosticVirtualTextError = { fg = palette.error },
-    DiagnosticVirtualTextWarn = { fg = palette.warning },
-    DiagnosticVirtualTextInfo = { fg = palette.blue },
-    DiagnosticVirtualTextHint = { fg = palette.hint },
+    DiagnosticHint = { fg = palette.moss },
+    DiagnosticVirtualTextError = { fg = palette.dark_red },
+    DiagnosticVirtualTextWarn = { fg = palette.dark_yellow },
+    DiagnosticVirtualTextInfo = { fg = palette.dark_blue },
+    DiagnosticVirtualTextHint = { fg = palette.dark_green },
     DiagnosticUnderlineError = vim.tbl_extend(
       "force",
       { sp = palette.error },
@@ -33,10 +33,10 @@ function M.highlight(palette, opts)
       { sp = palette.hint },
       opts.styles.lsp
     ),
-    LspSignatureActiveParameter = { bg = palette.alt_bg, bold = true },
+    LspSignatureActiveParameter = { bg = palette.coal, bold = true },
     LspCodeLens = { fg = palette.comment },
-    LspInlayHint = { bg = palette.hint },
-    LspInfoBoarder = { fg = palette.light_gray, bg = palette.hint },
+    LspInlayHint = { fg = palette.lichen },
+    LspInfoBoarder = { fg = palette.gravel, bg = palette.hint },
   }
 end
 
