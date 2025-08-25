@@ -2,7 +2,7 @@
 
 A woodsy Neovim theme
 
-<img width="747" height="767" alt="conifer" src="https://github.com/user-attachments/assets/07359e51-0b1f-43c9-891f-6479e8315fd6" />
+<img width="498" height="511" alt="conifer" src="https://github.com/user-attachments/assets/07359e51-0b1f-43c9-891f-6479e8315fd6" />
 
 > [!WARNING]
 > Conifer should be considered in alpha state. It is my daily driver, and includes support for *some* plugins, but changes to the theme are likely to happen for a while.
