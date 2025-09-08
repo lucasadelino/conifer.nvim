@@ -1,6 +1,6 @@
 # Conifer
 
-A woodsy Neovim theme
+A woodsy Neovim colorscheme
 
 <img width="498" height="511" alt="conifer" src="https://github.com/user-attachments/assets/07359e51-0b1f-43c9-891f-6479e8315fd6" />
 
