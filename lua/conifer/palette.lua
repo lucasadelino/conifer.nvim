@@ -16,49 +16,50 @@ local colors = {
   lichen = "#ABBAB5", -- faded_green
   bud    = "#C7FFBA", -- light_green
   leaf   = "#85B884", -- green
-  moss   = "#60b197", -- cyan
+  moss   = "#60B197", -- cyan
   dew    = "#C3D2D5", -- light_gray_blue
   mist   = "#A2B5C1", -- medium_gray_blue
   brook  = "#BAD7FF", -- blue 
-  fog    = "#576f82", -- gray_blue
+  fog    = "#576F82", -- gray_blue
   stone  = "#BDBBAF", -- pale_yellow
   bark   = "#B49273", -- red 
 
   none = "NONE",
   light_gray_green = "#C3D3D2",
-  cyan = "#60b197",
+  cyan = "#60B197",
   green = "#85B884", -- leaf
 
   -- UI Colors
   azure = "#6196C2",
-  blue = "#3982b7",
+  blue = "#3982B7",
   yellow  = "#FFE591",
   dark_yellow = "#666538",
   red = "#D7867D",
   dark_red = "#924843",
-  dark_blue = "#13344c",
+  dark_blue = "#13344C",
   orange = "#F6AD6C",
   purple = "#AA749F",
   dark_green = "#164639",
   medium_green = "#578266",
 
-  bright_orange = "#eda468",
+  bright_orange = "#EDA468",
 
   magenta = "#AA759F",
   cursor_fg = "#151515",
   cursor_bg = "#984936",
   sign_add = "#85B884",
-  sign_change = "#DBBB7F",
+  -- sign_change = "#DBBB7F",
+  sign_change = "#D6BD87",
   sign_delete = "#D7867D",
-  error = "#c07f7a",
+  error = "#C07F7A",
   warning = "#FFE591",
-  info = "#ab8550",
+  info = "#AB8550",
   hint = "#164639",
   todo = "#578266",
-  accent_lighter_blue = "#1e222a",
-  accent_blue = "#18191b",
-  accent_green = "#181b18",
-  accent_red = "#1b1818",
+  accent_lighter_blue = "#1E222A",
+  accent_blue = "#18191B",
+  accent_green = "#181B18",
+  accent_red = "#1B1818",
 }
 
 return colors
