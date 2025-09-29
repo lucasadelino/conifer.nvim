@@ -1,6 +1,7 @@
 local M = {}
 
 local DEFAULT = {
+  variant = "lunar",
   transparent = false,
   styles = {
     comments = {},
@@ -15,10 +16,12 @@ local DEFAULT = {
 
 M.opts = {}
 
-function M.set(opts)
+function M.setup(opts)
   M.opts = vim.tbl_deep_extend("force", DEFAULT, opts or {})
 end
 
-M.set()
+function M.extend(options)
+  return options and vim.tbl_deep_extend("force", {}, M.opts, options) or M.opts
+end
 
 return M

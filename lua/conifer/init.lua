@@ -1,27 +1,47 @@
+local config = require "conifer.config"
 local M = {}
 
-function M.setup(opts)
-  local settings = require "conifer.settings"
-  if opts then
-    settings.set(opts)
+function M.load(opts)
+  opts = config.extend(opts)
+
+  local palette
+  local name
+  local background = vim.o.background
+  local style_bg = opts.variant == "solar" and "light" or "dark"
+
+  if background ~= style_bg then
+    if
+      (vim.g.colors_name == "conifer-solar" and opts.variant == "solar")
+      or (vim.g.colors_name == "conifer" and opts.variant == "lunar")
+    then
+      opts.variant = background == "light" and "solar" or "lunar"
+    else
+      vim.o.background = style_bg
+    end
   end
-end
 
-function M.load()
-  local settings = require "conifer.settings"
-  local opts = settings.opts
+  if opts.variant == "solar" then
+    palette = require "conifer.palette-solar"
+    name = "conifer-solar"
+    opts.transparent = false
+  else
+    palette = require "conifer.palette"
+    name = "conifer"
+    opts.transparent = config.opts.transparent
+  end
 
-  vim.api.nvim_command "hi clear"
+  if vim.g.colors_name then
+    vim.cmd "hi clear"
+  end
+
   if vim.fn.exists "syntax_on" then
     vim.api.nvim_command "syntax reset"
   end
 
-  vim.o.background = "dark"
   vim.o.termguicolors = true
-  vim.g.colors_name = "conifer"
+  vim.g.colors_name = name
 
   local util = require "conifer.util"
-  local palette = require "conifer.palette"
   local groups = require "conifer.groups"
 
   for _, group in ipairs(groups) do
@@ -29,5 +49,7 @@ function M.load()
     util.initialise(group)
   end
 end
+
+M.setup = config.setup
 
 return M

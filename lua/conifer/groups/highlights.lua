@@ -12,7 +12,7 @@ function M.highlight(aspects, opts)
         italic = true,
       },
       default = true,
-      bg = aspects.none,
+      bg = background,
       fg = aspects.frost,
       italic = false,
     },
@@ -25,6 +25,9 @@ function M.highlight(aspects, opts)
     Conceal = { fg = aspects.frost },
     Conditional = { fg = aspects.moss },
     Constant = { fg = aspects.snow },
+    CopilotSuggestion = {
+      link = "Comment",
+    },
     CurSearch = { fg = aspects.coal, bg = aspects.bright_orange, bold = true },
     Cursor = { fg = aspects.cursor_fg, bg = aspects.cursor_bg },
     CursorColumn = { bg = aspects.coal },
@@ -92,6 +95,7 @@ function M.highlight(aspects, opts)
     },
     NormalFloat = {
       bg = opts.transparent and aspects.none or aspects.coal,
+      -- bg = aspects.coal,
     },
     NormalNC = {
       fg = aspects.frost,
@@ -128,9 +132,9 @@ function M.highlight(aspects, opts)
     String = { fg = aspects.stone },
     Structure = { fg = aspects.moss },
     Substitute = { fg = aspects.coal, bg = aspects.bright_orange },
-    TabLine = { fg = aspects.slate, bg = aspects.none },
-    TabLineFill = { fg = aspects.snow, bg = aspects.none },
-    TabLineSel = { fg = aspects.snow, bg = aspects.none },
+    TabLine = { fg = aspects.slate, bg = background },
+    TabLineFill = { fg = aspects.snow, bg = background },
+    TabLineSel = { fg = aspects.snow, bg = background },
     Tag = { fg = aspects.bud },
     TermCursor = {
       fg = aspects.cursor_fg,
@@ -153,6 +157,20 @@ function M.highlight(aspects, opts)
     WarningMsg = { fg = aspects.yellow, bg = aspects.raven },
     Whitespace = { fg = aspects.slate },
     WildMenu = { fg = aspects.bud, bg = aspects.coal },
+    WinBar = {
+      bg = background,
+      cterm = {
+        bold = false,
+      },
+      fg = aspects.gravel,
+    },
+    WinBarNC = {
+      bg = background,
+      cterm = {
+        bold = true,
+      },
+      fg = aspects.gravel,
+    },
     WinSeparator = {
       fg = aspects.ash,
       bg = background,
