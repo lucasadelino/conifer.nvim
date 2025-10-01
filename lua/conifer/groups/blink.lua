@@ -2,6 +2,9 @@ local M = {}
 
 function M.highlight(palette, _)
   return {
+    BlinkCmpDoc = { bg = palette.shade },
+    BlinkCmpDocBorder = { bg = palette.shade },
+    BlinkCmpDocSeparator = { bg = palette.shade },
     BlinkCmpGhostText = { fg = palette.ash },
     BlinkCmpKind = { fg = palette.gravel },
     BlinkCmpLabel = { fg = palette.snow },
