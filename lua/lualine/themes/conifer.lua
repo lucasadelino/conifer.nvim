@@ -5,7 +5,7 @@ local colors = {
   fg = "#DBDBDB",
   green = "#85B884",
   red = "#B49273",
-  slate = "#373737",
+  bg4 = "#373737",
   -- gray_blue = "#7E97AB",
   gray_blue = "#576f82",
   error = "#984936",
@@ -13,7 +13,7 @@ local colors = {
 
 return {
   normal = {
-    a = { fg = colors.fg, bg = colors.slate, gui = "bold" },
+    a = { fg = colors.fg, bg = colors.bg4, gui = "bold" },
     b = { fg = colors.fg, bg = colors.bg },
     c = { fg = colors.fg, bg = colors.bg },
   },
@@ -22,8 +22,8 @@ return {
   command = { a = { fg = colors.fg, bg = colors.gray_blue, gui = "bold" } },
   replace = { a = { fg = colors.fg, bg = colors.error, gui = "bold" } },
   inactive = {
-    a = { fg = colors.slate, bg = colors.bg },
-    b = { fg = colors.slate, bg = colors.bg },
-    c = { fg = colors.slate, bg = colors.bg },
+    a = { fg = colors.bg4, bg = colors.bg },
+    b = { fg = colors.bg4, bg = colors.bg },
+    c = { fg = colors.bg4, bg = colors.bg },
   },
 }

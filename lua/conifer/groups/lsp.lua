@@ -32,11 +32,11 @@ function M.highlight(palette, opts)
     ),
     LspCodeLens = { fg = palette.comment },
     LspInlayHint = { fg = palette.lichen },
-    LspInfoBoarder = { fg = palette.gravel, bg = palette.hint },
-    LspReferenceRead = { bg = palette.granite },
-    LspReferenceText = { bg = palette.granite },
-    LspReferenceWrite = { bg = palette.granite },
-    LspSignatureActiveParameter = { bg = palette.coal, bold = true },
+    LspInfoBoarder = { fg = palette.fg3, bg = palette.hint },
+    LspReferenceRead = { bg = palette.bg3 },
+    LspReferenceText = { bg = palette.bg3 },
+    LspReferenceWrite = { bg = palette.bg3 },
+    LspSignatureActiveParameter = { bg = palette.bg1, bold = true },
   }
 end
 

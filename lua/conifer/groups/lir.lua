@@ -2,9 +2,9 @@ local M = {}
 
 function M.highlight(palette)
   return {
-    LirDir = { fg = palette.snow },
-    LirEmptyDirText = { fg = palette.ash },
-    LirFloatNormal = { fg = palette.fg, bg = palette.coal },
+    LirDir = { fg = palette.fg0 },
+    LirEmptyDirText = { fg = palette.bg6 },
+    LirFloatNormal = { fg = palette.fg, bg = palette.bg1 },
     LirSymLink = { fg = palette.cyan },
   }
 end

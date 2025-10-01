@@ -6,7 +6,7 @@ function M.highlight(colors)
     MiniIconsBlue = { fg = colors.blue },
     MiniIconsCyan = { fg = colors.moss },
     MiniIconsGreen = { fg = colors.leaf },
-    MiniIconsGrey = { fg = colors.ash },
+    MiniIconsGrey = { fg = colors.bg6 },
     MiniIconsOrange = { fg = colors.orange },
     MiniIconsPurple = { fg = colors.purple },
     MiniIconsRed = { fg = colors.red },

@@ -6,8 +6,8 @@ function M.highlight(palette)
     CmpItemAbbrDeprecated = { fg = palette.red },
     CmpItemAbbrMatch = { fg = palette.orange },
     CmpItemAbbrMatchFuzzy = { fg = palette.orange },
-    CmpItemKind = { fg = palette.gravel },
-    CmpItemMenu = { fg = palette.ash },
+    CmpItemKind = { fg = palette.fg3 },
+    CmpItemMenu = { fg = palette.bg6 },
   }
 end
 

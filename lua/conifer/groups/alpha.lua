@@ -2,7 +2,7 @@ local M = {}
 
 function M.highlight(palette, opts)
   return {
-    AlphaButtons = { fg = palette.ash },
+    AlphaButtons = { fg = palette.bg6 },
     AlphaHeader = { fg = palette.gray_blue },
   }
 end

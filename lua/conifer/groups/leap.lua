@@ -2,7 +2,7 @@ local M = {}
 
 function M.highlight(palette, opts)
   return {
-    LeapBackdrop = { fg = palette.ash },
+    LeapBackdrop = { fg = palette.bg6 },
     LeapLabel = { fg = palette.orange, bold = true },
     LeapMatch = { fg = palette.cyan, bold = true },
   }

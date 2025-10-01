@@ -6,7 +6,7 @@ function M.highlight(palette)
     DropBarCurrentContextName = { bold = true },
     DropBarFzfMatch = { fg = palette.bark },
     DropBarIconUIIndicator = {
-      fg = palette.frost,
+      fg = palette.fg1,
       bg = palette.none,
       bold = true,
       reverse = false,
@@ -17,17 +17,17 @@ function M.highlight(palette)
       bold = true,
       cterm = { bold = true },
     },
-    DropBarIconUISeparator = { fg = palette.shale },
-    DropBarMenuCurrentContext = { bg = palette.shade },
-    DropBarMenuHoverEntry = { bg = palette.granite },
+    DropBarIconUISeparator = { fg = palette.bg5 },
+    DropBarMenuCurrentContext = { bg = palette.bg2 },
+    DropBarMenuHoverEntry = { bg = palette.bg3 },
     DropBarMenuHoverIcon = {
-      fg = palette.frost,
+      fg = palette.fg1,
       bg = palette.none,
       bold = true,
       reverse = false,
     },
     DropBarMenuHoverSymbol = { bold = true },
-    DropBarMenuNormalFloat = { fg = palette.bone, bg = palette.coal },
+    DropBarMenuNormalFloat = { fg = palette.fg2, bg = palette.bg1 },
   }
 end
 

@@ -11,7 +11,7 @@ function M.highlight(palette)
     NoiceConfirmBorder = { fg = palette.bark },
     NoiceFormatLevelInfo = { fg = palette.blue },
     NoiceFormatTitle = { link = "FloatBorder", default = true },
-    NoiceVirtualText = { fg = palette.ash, default = true },
+    NoiceVirtualText = { fg = palette.bg6, default = true },
   }
 end
 

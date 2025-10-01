@@ -2,9 +2,9 @@ local M = {}
 
 function M.highlight(aspects)
   return {
-    NotificationError = { fg = aspects.sign_delete, bg = aspects.coal },
-    NotificationInfo = { fg = aspects.frost, bg = aspects.coal },
-    NotificationWarning = { fg = aspects.warning, bg = aspects.coal },
+    NotificationError = { fg = aspects.sign_delete, bg = aspects.bg1 },
+    NotificationInfo = { fg = aspects.fg1, bg = aspects.bg1 },
+    NotificationWarning = { fg = aspects.warning, bg = aspects.bg1 },
   }
 end
 

@@ -1,31 +1,32 @@
 -- stylua: ignore
 
 local colors = {
-
-  -- Code colors
-  snow   = "#E1E1E1", -- white
-  frost  = "#D6D6D6", -- fg
-  bone   = "#C1C1C1", -- lighter_gray 
-  gravel = "#AFAFAF", -- gravel 
-  pebble = "#909090", -- gravel 
-  ash    = "#727272", -- medium_gray
-  shale  = "#525252", -- medium_gray
-  slate  = "#373737", -- gray
-  granite  = "#282828", -- gray
-  shade  = "#202020", -- accent
-  coal   = "#171717", -- alt_bg 
-  raven  = "#151515", -- bg 
-  lichen = "#ABBAB5", -- faded_green
-  bud    = "#C7FFBA", -- light_green
-  leaf   = "#85B884", -- green
-  moss   = "#60B197", -- cyan
-  dew    = "#C3D2D5", -- light_gray_blue
-  mist   = "#A2B5C1", -- medium_gray_blue
-  brook  = "#BAD7FF", -- blue 
-  fog    = "#576F82", -- gray_blue
-  stone  = "#BDBBAF", -- pale_yellow
-  bark   = "#B49273", -- red 
-  chestnut   = "#A66E55",
+  -- CODE COLORS
+  -- Fore and background
+  fg0 = "#E1E1E1", -- snow
+  fg1 = "#D6D6D6", -- frost
+  fg2 = "#C1C1C1", -- bone
+  fg3 = "#AFAFAF", -- gravel
+  fg4 = "#909090", -- pebble
+  bg6 = "#727272", -- ash
+  bg5 = "#525252", -- shale
+  bg4 = "#373737", -- slate
+  bg3 = "#282828", -- granite
+  bg2 = "#202020", -- shade
+  bg1 = "#171717", -- coal
+  bg0 = "#151515", -- raven
+  -- Hues
+  lichen = "#ABBAB5", -- lichen
+  bud    = "#C7FFBA", -- bud
+  leaf   = "#85B884", -- leaf
+  moss   = "#60B197", -- moss
+  dew    = "#C3D2D5", -- dew
+  mist   = "#A2B5C1", -- mist
+  brook  = "#BAD7FF", -- brook
+  fog    = "#576F82", -- fog
+  stone  = "#BDBBAF", -- stone
+  bark   = "#B49273", -- bark
+  chestnut = "#A66E55", -- chestnut
 
   none = "NONE",
   light_gray_green = "#C3D3D2",

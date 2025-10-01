@@ -2,11 +2,11 @@ local M = {}
 
 function M.highlight(palette, opts)
   return {
-    StatusLine = { fg = palette.slate, bg = palette.raven },
-    StatusLineNC = { fg = palette.coal, bg = palette.coal },
-    StatusLineSeparator = { fg = palette.raven },
-    StatusLineTerm = { fg = palette.raven },
-    StatusLineTermNC = { fg = palette.raven },
+    StatusLine = { fg = palette.bg4, bg = palette.bg0 },
+    StatusLineNC = { fg = palette.bg1, bg = palette.bg1 },
+    StatusLineSeparator = { fg = palette.bg0 },
+    StatusLineTerm = { fg = palette.bg0 },
+    StatusLineTermNC = { fg = palette.bg0 },
   }
 end
 
