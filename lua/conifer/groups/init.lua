@@ -30,4 +30,5 @@ return {
   require "conifer.groups.todo-comments",
   require "conifer.groups.whichkey",
   require "conifer.groups.diffview",
+  require "conifer.groups.yanky",
 }
