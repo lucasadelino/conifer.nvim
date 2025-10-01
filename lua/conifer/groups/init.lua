@@ -4,6 +4,7 @@ return {
   require "conifer.groups.copilot-chat",
   require "conifer.groups.dadbod-ui",
   require "conifer.groups.dapui",
+  require "conifer.groups.dropbar",
   require "conifer.groups.git",
   require "conifer.groups.highlights",
   require "conifer.groups.hop",

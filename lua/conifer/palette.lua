@@ -7,7 +7,9 @@ local colors = {
   frost  = "#D6D6D6", -- fg
   bone   = "#C1C1C1", -- lighter_gray 
   gravel = "#AFAFAF", -- gravel 
+  pebble = "#909090", -- gravel 
   ash    = "#727272", -- medium_gray
+  shale  = "#525252", -- medium_gray
   slate  = "#373737", -- gray
   granite  = "#282828", -- gray
   shade  = "#202020", -- accent
@@ -23,6 +25,7 @@ local colors = {
   fog    = "#576F82", -- gray_blue
   stone  = "#BDBBAF", -- pale_yellow
   bark   = "#B49273", -- red 
+  chestnut   = "#A66E55",
 
   none = "NONE",
   light_gray_green = "#C3D3D2",
@@ -42,13 +45,12 @@ local colors = {
   dark_green = "#164639",
   medium_green = "#578266",
 
-  bright_orange = "#EDA468",
+  bright_orange = "#D19B6E",
 
   magenta = "#AA759F",
   cursor_fg = "#151515",
-  cursor_bg = "#984936",
+  cursor_bg = "#727272",
   sign_add = "#85B884",
-  -- sign_change = "#DBBB7F",
   sign_change = "#D6BD87",
   sign_delete = "#D7867D",
   error = "#C07F7A",
