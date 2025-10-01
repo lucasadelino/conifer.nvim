@@ -2,8 +2,11 @@ local M = {}
 
 function M.highlight(palette)
   return {
-    NeogitBranch = { fg = palette.leaf, bold = true },
+    NeogitBranch = { fg = palette.bark, bold = true },
+    NeogitBranchHead = { fg = palette.bark, bold = true, underline = true },
     NeogitChangeModified = { fg = palette.sign_change },
+    NeogitChangeRenamed = { fg = palette.blue },
+    NeogitChangeRstaged = { fg = palette.blue },
     NeogitChangeMstaged = { fg = palette.leaf },
     NeogitChangeNewFile = { fg = palette.leaf },
     NeogitDiffAdd = { fg = palette.sign_add, bg = palette.accent_green },
@@ -37,7 +40,7 @@ function M.highlight(palette)
     NeogitPopupSectionTitle = { fg = palette.leaf, bold = true },
     NeogitPopupSwitchKey = { fg = palette.leaf },
     NeogitRecentcommits = { fg = palette.fg, bold = true },
-    NeogitRemote = { fg = palette.moss, bold = true },
+    NeogitRemote = { fg = palette.bark },
     NeogitSectionHeader = { fg = palette.fg, bold = true },
     NeogitStagedchanges = { fg = palette.leaf, bold = true },
     NeogitSubtleText = { link = "Comment" },
