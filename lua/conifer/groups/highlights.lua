@@ -5,17 +5,6 @@ function M.highlight(aspects, opts)
 
   return {
     Bold = { bold = true },
-    BufferLineBufferSelected = {
-      bold = true,
-      cterm = {
-        bold = true,
-        italic = true,
-      },
-      default = true,
-      bg = background,
-      fg = aspects.fg1,
-      italic = false,
-    },
     Changed = {
       fg = aspects.sign_change,
     },

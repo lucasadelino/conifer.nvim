@@ -35,6 +35,17 @@ function M.highlight(palette)
       italic = false,
       sp = palette.blue,
     },
+    BufferLineBufferSelected = {
+      bold = true,
+      cterm = {
+        bold = true,
+        italic = true,
+      },
+      default = true,
+      bg = palette.none,
+      fg = palette.fg1,
+      italic = false,
+    },
     BufferLineWarningSelected = {
       bold = true,
       cterm = {
