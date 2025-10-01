@@ -107,7 +107,7 @@ function M.highlight(aspects, opts)
     PmenuMatchSel = { bg = aspects.yellow, fg = aspects.slate, reverse = true },
     PmenuSbar = { bg = aspects.coal },
     PmenuSel = { bg = aspects.bud, fg = aspects.slate, reverse = true },
-    PmenuThumb = { bg = aspects.gravel },
+    PmenuThumb = { bg = aspects.slate },
     PreCondit = { fg = aspects.ash },
     PreProc = { fg = aspects.snow },
     Question = { fg = aspects.leaf },
@@ -162,14 +162,14 @@ function M.highlight(aspects, opts)
       cterm = {
         bold = false,
       },
-      fg = aspects.gravel,
+      fg = aspects.pebble,
     },
     WinBarNC = {
       bg = background,
       cterm = {
         bold = true,
       },
-      fg = aspects.gravel,
+      fg = aspects.ash,
     },
     WinSeparator = {
       fg = aspects.ash,
