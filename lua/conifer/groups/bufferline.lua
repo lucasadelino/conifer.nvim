@@ -25,6 +25,7 @@ function M.highlight(palette, opts)
       fg = palette.fg1,
       italic = false,
     },
+    BufferLineTabSelected = { bg = bg2, fg = palette.fg1, bold = true },
     BufferLineCloseButton = { bg = bg, fg = fg },
     BufferLineFill = {
       bg = bg1,
