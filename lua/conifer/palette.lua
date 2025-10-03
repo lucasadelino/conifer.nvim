@@ -13,11 +13,11 @@ local colors = {
   bg4 = "#373737", -- slate
   bg3 = "#282828", -- granite
   bg2 = "#202020", -- shade
-  bg1 = "#171717", -- coal
+  bg1 = "#161716", -- coal
   bg0 = "#151515", -- raven
   -- Hues
   lichen = "#ABBAB5", -- lichen
-  bud    = "#C7FFBA", -- bud
+  bud    = "#B3DBA9", -- bud
   leaf   = "#85B884", -- leaf
   moss   = "#60B197", -- moss
   dew    = "#C3D2D5", -- dew
