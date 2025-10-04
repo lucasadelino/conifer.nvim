@@ -2,6 +2,12 @@ local M = {}
 
 function M.highlight(aspects, opts)
   local background = opts.transparent and aspects.none or aspects.bg0
+  local background1 = opts.transparent and aspects.none or aspects.bg1
+  local cursor_bg = aspects.bg2
+  if opts.variant == "lunar" and opts.transparent == true then
+    -- Slightly darken cursorline
+    cursor_bg = aspects.bg1
+  end
 
   return {
     Bold = { bold = true },
@@ -22,7 +28,7 @@ function M.highlight(aspects, opts)
     CursorColumn = { bg = aspects.bg1 },
     CursorIM = { fg = aspects.cursor_fg, bg = aspects.cursor_bg },
     CursorLine = {
-      bg = aspects.bg1,
+      bg = cursor_bg,
     },
     CursorLineNr = {
       fg = aspects.fg3,
@@ -64,7 +70,7 @@ function M.highlight(aspects, opts)
     Macro = { fg = aspects.leaf },
     MatchParen = vim.tbl_extend(
       "force",
-      { fg = aspects.bud, bg = aspects.bg0, underline = true },
+      { fg = aspects.bud, bg = aspects.none, underline = true },
       opts.styles.match_paren
     ),
     MatchParenCur = { underline = true },
@@ -80,11 +86,10 @@ function M.highlight(aspects, opts)
     NonText = { fg = aspects.fg1 },
     Normal = {
       fg = aspects.fg1,
-      bg = background,
+      bg = background1,
     },
     NormalFloat = {
       bg = opts.transparent and aspects.none or aspects.bg1,
-      -- bg = aspects.bg1,
     },
     NormalNC = {
       fg = aspects.fg1,

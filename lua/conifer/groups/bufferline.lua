@@ -42,6 +42,7 @@ function M.highlight(palette, opts)
       sp = palette.error,
     },
     BufferLineHintSelected = {
+      bg = bg2,
       bold = true,
       cterm = {
         bold = true,
@@ -52,6 +53,7 @@ function M.highlight(palette, opts)
       sp = palette.medium_green,
     },
     BufferLineInfoSelected = {
+      bg = bg2,
       bold = true,
       cterm = {
         bold = true,
@@ -76,6 +78,7 @@ function M.highlight(palette, opts)
       fg = fg,
     },
     BufferLineWarningSelected = {
+      bg = bg2,
       bold = true,
       cterm = {
         bold = true,
