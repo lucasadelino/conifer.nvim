@@ -26,7 +26,7 @@ local colors = {
   fog    = "#576F82",
   stone  = "#BDBBAF",
   bark   = "#B49273",
-  chestnut = "#A66E55",
+  acorn  = "#A66E55",
 
   none = "NONE",
   light_gray_green = "#C3D3D2",
