@@ -3,35 +3,35 @@
 local colors = {
   -- CODE COLORS
   -- Fore and background
-  fg0 = "#E1E1E1", -- snow
-  fg1 = "#D6D6D6", -- frost
-  fg2 = "#C1C1C1", -- bone
-  fg3 = "#AFAFAF", -- gravel
-  fg4 = "#909090", -- pebble
-  bg6 = "#727272", -- ash
-  bg5 = "#525252", -- shale
-  bg4 = "#373737", -- slate
-  bg3 = "#282828", -- granite
-  bg2 = "#202020", -- shade
-  bg1 = "#161716", -- coal
-  bg0 = "#151515", -- raven
+  fg0 = "#E1E1E1",
+  fg1 = "#D6D6D6",
+  fg2 = "#C1C1C1",
+  fg3 = "#AFAFAF",
+  fg4 = "#909090",
+  bg6 = "#727272",
+  bg5 = "#525252",
+  bg4 = "#373737",
+  bg3 = "#282828",
+  bg2 = "#202020",
+  bg1 = "#161716",
+  bg0 = "#151515",
   -- Hues
-  lichen = "#ABBAB5", -- lichen
-  bud    = "#B3DBA9", -- bud
-  leaf   = "#85B884", -- leaf
-  moss   = "#60B197", -- moss
-  dew    = "#C3D2D5", -- dew
-  mist   = "#A2B5C1", -- mist
-  brook  = "#BAD7FF", -- brook
-  fog    = "#576F82", -- fog
-  stone  = "#BDBBAF", -- stone
-  bark   = "#B49273", -- bark
-  chestnut = "#A66E55", -- chestnut
+  lichen = "#ABBAB5",
+  bud    = "#B3DBA9",
+  leaf   = "#85B884",
+  moss   = "#60B197",
+  dew    = "#C3D2D5",
+  mist   = "#A2B5C1",
+  brook  = "#BAD7FF",
+  fog    = "#576F82",
+  stone  = "#BDBBAF",
+  bark   = "#B49273",
+  chestnut = "#A66E55",
 
   none = "NONE",
   light_gray_green = "#C3D3D2",
   cyan = "#60B197",
-  green = "#85B884", -- leaf
+  green = "#85B884",
 
   -- UI Colors
   azure = "#6196C2",
@@ -51,7 +51,6 @@ local colors = {
 
   bright_orange = "#D19B6E",
 
-  magenta = "#AA759F",
   cursor_fg = "#151515",
   cursor_bg = "#727272",
   sign_add = "#85B884",
