@@ -1,19 +1,18 @@
 -- Colorscheme for lualine
 
 local colors = {
-  bg = "#F0F0CA",
+  bg = "#CBCBA5",
   fg = "#303030",
-  green = "#85B884",
-  red = "#B49273",
-  bg4 = "#373737",
-  -- gray_blue = "#7E97AB",
+  green = "#356A28",
+  red = "#6e4211",
+  bg2 = "#A8A884",
   gray_blue = "#576f82",
-  error = "#984936",
+  error = "#db7369",
 }
 
 return {
   normal = {
-    a = { fg = colors.fg, bg = colors.bg4, gui = "bold" },
+    a = { fg = colors.fg, bg = colors.bg2, gui = "bold" },
     b = { fg = colors.fg, bg = colors.bg },
     c = { fg = colors.fg, bg = colors.bg },
   },
@@ -22,8 +21,8 @@ return {
   command = { a = { fg = colors.fg, bg = colors.gray_blue, gui = "bold" } },
   replace = { a = { fg = colors.fg, bg = colors.error, gui = "bold" } },
   inactive = {
-    a = { fg = colors.bg4, bg = colors.bg },
-    b = { fg = colors.bg4, bg = colors.bg },
-    c = { fg = colors.bg4, bg = colors.bg },
+    a = { fg = colors.bg2, bg = colors.bg },
+    b = { fg = colors.bg2, bg = colors.bg },
+    c = { fg = colors.bg2, bg = colors.bg },
   },
 }
