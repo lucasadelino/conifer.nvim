@@ -40,9 +40,12 @@ local colors = {
   dark_yellow = "#666538",
   red = "#D7867D",
   dark_red = "#924843",
-  dark_blue = "#13344C",
+  darker_red = "#5b2b28",
+  dark_blue = "#1b3c54",
   orange = "#F6AD6C",
+  dark_orange = "#584125",
   purple = "#AA749F",
+  dark_purple = "#52354f",
   dark_green = "#164639",
   medium_green = "#578266",
 
