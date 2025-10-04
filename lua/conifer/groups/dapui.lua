@@ -21,7 +21,7 @@ function M.highlight(palette)
     DapUIStop = { link = "DapUIWatchesEmpty" },
     DapUIStoppedThread = { link = "DapUIScope" },
     DapUIThread = { fg = palette.green, bold = true },
-    DapUIType = { fg = palette.magenta },
+    DapUIType = { fg = palette.purple },
     DapUIUnavailable = { link = "DapUIBreakpointsDisabledLine" },
     DapUIWatchesEmpty = { fg = palette.red },
     DapUIWatchesError = { link = "DapUIWatchesEmpty" },
