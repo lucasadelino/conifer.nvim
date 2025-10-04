@@ -1,8 +1,17 @@
 local M = {}
-
 function M.highlight(aspects, opts)
   local background = opts.transparent and aspects.none or aspects.bg0
   local background1 = opts.transparent and aspects.none or aspects.bg1
+
+  local dim_bg = aspects.none
+  if not opts.transparent then
+    if opts.variant == "solar" then
+      dim_bg = aspects.bg2
+    else
+      dim_bg = aspects.bg0
+    end
+  end
+
   local cursor_bg = aspects.bg2
   if opts.variant == "lunar" and opts.transparent == true then
     -- Slightly darken cursorline
@@ -93,7 +102,7 @@ function M.highlight(aspects, opts)
     },
     NormalNC = {
       fg = aspects.fg1,
-      bg = background,
+      bg = dim_bg,
     },
     Number = { fg = aspects.bark },
     Operator = { fg = aspects.lichen },
@@ -167,7 +176,7 @@ function M.highlight(aspects, opts)
     },
     WinSeparator = {
       fg = aspects.bg6,
-      bg = background,
+      bg = background1,
     },
   }
 end
