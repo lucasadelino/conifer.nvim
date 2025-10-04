@@ -60,8 +60,8 @@ local colors = {
   todo = "#578266",
   accent_lighter_blue = "#1E222A",
   accent_blue = "#18191B",
-  accent_green = "#181B18",
-  accent_red = "#1B1818",
+  accent_green = "#DBE5D9",
+  accent_red = "#EDDED6",
 }
 
 return colors
