@@ -34,23 +34,24 @@ local colors = {
   green = "#85B884",
 
   -- UI Colors
+  -- Brights
   azure = "#6196C2",
   blue = "#3982B7",
-  yellow  = "#FFE591",
-  dark_yellow = "#666538",
+  bright_orange = "#D19B6E",
+  orange = "#F6AD6C",
+  purple = "#AA749F",
   red = "#D7867D",
+  yellow  = "#FFE591",
+  -- Darks
+  dark_blue = "#1b3c54",
+  dark_green = "#164639",
+  dark_orange = "#584125",
+  dark_purple = "#52354f",
   dark_red = "#924843",
   darker_red = "#5b2b28",
-  dark_blue = "#1b3c54",
-  orange = "#F6AD6C",
-  dark_orange = "#584125",
-  purple = "#AA749F",
-  dark_purple = "#52354f",
-  dark_green = "#164639",
+  dark_yellow = "#666538",
   medium_green = "#578266",
-
-  bright_orange = "#D19B6E",
-
+  -- Misc
   cursor_fg = "#151515",
   cursor_bg = "#727272",
   sign_add = "#85B884",
