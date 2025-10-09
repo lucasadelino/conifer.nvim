@@ -2,14 +2,14 @@ local M = {}
 
 function M.highlight(palette)
   return {
-    -- SnacksDbg6boardDesc = { fg = palette.green },
-    -- SnacksDbg6boardFooter = { fg = palette.bg4 },
-    -- SnacksDbg6boardIcon = { fg = palette.fg },
-    -- SnacksDbg6boardSpecial = { fg = palette.fg },
+    -- SnacksDashboardDesc = { fg = palette.green },
+    -- SnacksDashboardFooter = { fg = palette.fg4 },
+    -- SnacksDashboardIcon = { fg = palette.fg },
+    -- SnacksDashboardSpecial = { fg = palette.fg },
     -- SnacksPickerPrompt = { fg = palette.green },
     -- SnacksPickerSpecial = { fg = palette.cyan },
     -- SnacksPickerTitle = { fg = palette.green },
-    SnacksDbg6boardKey = { fg = palette.leaf },
+    SnacksDashboardKey = { fg = palette.leaf },
     SnacksIndent = { fg = palette.bg4 },
     SnacksIndentScope = { fg = palette.fg3 },
     SnacksPickerMatch = { bold = true, underline = true },
