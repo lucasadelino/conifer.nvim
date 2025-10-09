@@ -3,7 +3,7 @@ local M = {}
 function M.highlight(palette)
   return {
     -- SnacksDashboardDesc = { fg = palette.green },
-    -- SnacksDashboardFooter = { fg = palette.fg4 },
+    SnacksDashboardFooter = { fg = palette.fg4 },
     -- SnacksDashboardIcon = { fg = palette.fg },
     -- SnacksDashboardSpecial = { fg = palette.fg },
     -- SnacksPickerPrompt = { fg = palette.green },
