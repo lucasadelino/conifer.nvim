@@ -46,6 +46,7 @@ function M.highlight(aspects, opts)
     ["@keyword.operator"] = { fg = aspects.moss },
     ["@keyword.repeat"] = { fg = aspects.moss },
     ["@label"] = { fg = aspects.fg1 },
+    ["@lsp.mod.defaultLibrary"] = { fg = aspects.leaf },
     ["@lsp.type.comment"] = {},
     ["@markup"] = { fg = aspects.fg1 },
     ["@markup.italic"] = { italic = true },
