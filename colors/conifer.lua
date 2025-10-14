@@ -1,1 +1,1 @@
-require("conifer").load { variant = vim.o.background == "light" and "solar" or nil }
+require("conifer").load { variant = vim.o.background == "light" and "solar" or "lunar" }

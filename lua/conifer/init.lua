@@ -27,7 +27,12 @@ function M.load(opts)
   else
     palette = require "conifer.palette"
     name = "conifer"
-    opts.transparent = config.opts.transparent
+
+    if opts.transparent == nil then
+      opts.transparent = true
+    else
+      opts.transparent = config.opts.transparent
+    end
   end
 
   if vim.g.colors_name then

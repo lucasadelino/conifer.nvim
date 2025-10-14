@@ -1,1 +1,1 @@
-require("conifer").load { variant = "solar", transparent = false }
+require("conifer").load { variant = "solar" }
