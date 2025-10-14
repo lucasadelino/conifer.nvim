@@ -5,46 +5,83 @@ CONTENTS                                                *conifer-contents*
 
 1. Conifer...............................................|conifer-conifer|
     1.1. Usage.............................................|conifer-usage|
-    1.2. Supported Plugins.....................|conifer-supported_plugins|
+    1.2. Configuration....................................|conifer-config|
+    1.3. Supported Plugins.....................|conifer-supported_plugins|
 
 ================================================================================
 CONIFER                                                  *conifer-conifer*
 
-A woodsy Neovim colorscheme
+Conifer is a woodsy Neovim colorscheme, featuring:
 
+- A slim color palette for syntax tokens, prioritizing shades of green, brown,
+  and white
+- A fuller color palette for UI elements, to draw your eye
+- A muted color palette for diagnostic virtual text, to get out of your way
+- A light mode, for the occasional times we venture outside of our caves.
 
 --------------------------------------------------------------------------------
 USAGE                                                      *conifer-usage*
 
-To enable this colorscheme:
+You can enable conifer with:
 >
-    colorscheme conifer
+  colorscheme no-clown-fiesta
 <
+or with:
 >
-    vim.cmd[[colorscheme conifer]]
+  vim.cmd[[colorscheme no-clown-fiesta]]
+<
+or, if using LazyVim:
+>
+  {
+    "LazyVim/LazyVim",
+    opts = {
+      colorscheme = "conifer",
+    },
+  }
 <
 
-To override the default settings you need to call setup before enabling the
-colorscheme. conifer will use these settings, unless you call setup
-and override these.
+Conifer responds to changing `vim.o.background` on the fly, and will switch to
+the `solar` or `lunar` variant accordingly.
+
+--------------------------------------------------------------------------------
+CONFIGURATION                                            *conifer-config*
+
+Conifer has a few options for configuration. The defaults are:
+
 >
-    require("conifer").setup({
-      transparent = false, -- Enable this to disable the bg color
-      styles = { 
-        -- You can set any of the style values specified for `:h nvim_set_hl`
-        comments = {},
-        keywords = {},
-        functions = {},
-        variables = {},
-        type = { bold = true },
-      },
-    })
+  require("conifer").setup({
+    variant = "lunar", -- Prefer dark theme; change to "solar" for light
+    transparent = true, -- Whether to set the bg color for the lunar variant
+    styles = { -- Override Conifer's highlights
+      -- See `:h nvim_set_hl` for syntax
+      comments = {},
+      functions = {},
+      keywords = {},
+      lsp = {},
+      match_paren = {},
+      type = {},
+      variables = {},
+    },
+  })
 <
+
+TRANSPARENCY
+
+The `transparent` setting only has an effect for the dark (`lunar`) variant.
+The light variant (`solar`) is always non-transparent. This is mostly for
+ergonomic reasons: it assumes that you prefer the transparent dark theme, but
+sometimes switch to the light theme, in which case it's probably because you
+need the extra contrast.
 
 --------------------------------------------------------------------------------
 SUPPORTED PLUGINS                              *conifer-supported_plugins*
 
 *   Alpha
+*   Blink
+*   Bufferline
+*   CopilotChat
+*   DiffView
+*   Dropbar
 *   Git
 *   Hop
 *   Leap
@@ -52,12 +89,16 @@ SUPPORTED PLUGINS                              *conifer-supported_plugins*
 *   LSP
 *   Lualine
 *   Markdown
+*   Mini.icons
+*   Mini.statusline
 *   Neogit
+*   Neotest
+*   Noice
 *   NvimCmp
 *   NvimTree
 *   Telescope
+*   Todo-Comments
 *   Treesitter
-*   StatusLine (the default non custom one)
+*   StatusLine (the default, non custom one)
 *   WhichKey
-*   Mini.statusline
-*   DiffView
+
