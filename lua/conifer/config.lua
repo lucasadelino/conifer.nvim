@@ -21,7 +21,7 @@ function M.setup(opts)
 end
 
 function M.extend(options)
-  return options and vim.tbl_deep_extend("force", {}, M.opts, options) or M.opts
+  return options and vim.tbl_deep_extend("force", DEFAULT, M.opts, options) or M.opts
 end
 
 return M
