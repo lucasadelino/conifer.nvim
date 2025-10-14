@@ -157,7 +157,7 @@ function M.highlight(aspects, opts)
     VertSplit = { fg = aspects.bg0, bg = aspects.bg2 },
     Visual = { bg = aspects.bg4 },
     VisualNOS = { bg = aspects.bg1 },
-    WarningMsg = { fg = aspects.yellow, bg = aspects.bg0 },
+    WarningMsg = { fg = aspects.yellow, bg = background1 },
     Whitespace = { fg = aspects.bg4 },
     WildMenu = { fg = aspects.bud, bg = aspects.bg1 },
     WinBar = {
