@@ -2,7 +2,7 @@ local M = {}
 
 local DEFAULT = {
   variant = "lunar",
-  transparent = false,
+  transparent = true,
   styles = {
     comments = {},
     functions = {},
