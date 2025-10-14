@@ -28,6 +28,9 @@ function M.highlight(palette)
     markdownUrl = { fg = palette.azure, underline = true },
     ObsidianExtLinkIcon = { fg = palette.blue },
     RenderMarkdownH1Bg = { bold = true },
+    RenderMarkdownH2Bg = { link = "DiffAdd" },
+    RenderMarkdownH3Bg = { link = "DiffAdd" },
+    RenderMarkdownH4Bg = { link = "DiffAdd" },
   }
 end
 
