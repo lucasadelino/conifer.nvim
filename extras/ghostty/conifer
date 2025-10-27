@@ -1,0 +1,25 @@
+# normal colors
+palette = 0=#161716
+palette = 1=#B49273
+palette = 2=#85B884
+palette = 3=#BDBBAF
+palette = 4=#A2B5C1
+palette = 5=#ABBAB5
+palette = 6=#60B197
+palette = 7=#B5B5B5
+# bright colors
+palette = 8=#727272
+palette = 9=#E06C75
+palette = 10=#8EC772
+palette = 11=#D6BD87
+palette = 12=#6196C2
+palette = 13=#AA749F
+palette = 14=#BAD7FF
+palette = 15=#E1E1E1
+# fg/bg, cursor, selection colors
+background = #161716
+foreground = #D6D6D6
+cursor-color = #C1C1C1
+cursor-text = #161716
+selection-background = #373737
+selection-foreground = #E1E1E1
