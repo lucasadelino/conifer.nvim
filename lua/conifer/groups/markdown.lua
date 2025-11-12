@@ -31,6 +31,8 @@ function M.highlight(palette)
     RenderMarkdownH2Bg = { link = "DiffAdd" },
     RenderMarkdownH3Bg = { link = "DiffAdd" },
     RenderMarkdownH4Bg = { link = "DiffAdd" },
+    RenderMarkdownH5Bg = { link = "DiffAdd" },
+    RenderMarkdownH6Bg = { link = "DiffAdd" },
   }
 end
 
