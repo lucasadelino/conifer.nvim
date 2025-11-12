@@ -1,0 +1,33 @@
+[colors]
+ansi = [
+  "#151515", # black
+  "#B49273", # red
+  "#84B884", # green
+  "#BDBBAF", # yellow
+  "#A2B5C1", # blue
+  "#ABBAB5", # magenta
+  "#60B197", # cyan
+  "#B5B5B5", # white
+]
+brights = [
+  "#626262", # brblack
+  "#E06C75", # brred
+  "#84B884", # brgreen
+  "#E5C07B", # bryellow
+  "#A2B5C1", # brblue
+  "#C678DD", # brmagenta
+  "#60B197", # brcyan
+  "#F9F8F5", # brwhite
+]
+background = "#161716"
+cursor_bg = "#C1C1C1"
+cursor_border = "#B5B5B5"
+cursor_fg = "#151515"
+foreground = "#B5B5B5"
+selection_bg = "#B5B5B5"
+selection_fg = "#151515"
+[metadata]
+aliases = ["Conifer"]
+author = "Lucas Adelino"
+name = "Conifer"
+wezterm_version = "Always"
