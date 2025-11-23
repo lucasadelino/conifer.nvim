@@ -22,6 +22,7 @@ function M.highlight(palette, opts)
   return {
     NeogitBranch = { fg = palette.bark, bold = true },
     NeogitBranchHead = { fg = palette.bark, bold = true, underline = true },
+    NeogitChangeDeleted = { fg = palette.sign_delete },
     NeogitChangeModified = { fg = palette.sign_change },
     NeogitChangeRenamed = { fg = palette.blue },
     NeogitChangeRstaged = { fg = palette.blue },
