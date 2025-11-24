@@ -1,0 +1,39 @@
+[[themes]]
+name = "conifer"
+
+[themes.palette]
+foreground = "#B5B5B5"
+black = "#151515"
+red = "#B49273"
+green = "#85B884"
+yellow = "#BDBBAF"
+blue = "#A2B5C1"
+magenta = "#ABBAB5"
+cyan = "#60B197"
+white = "#B5B5B5"
+bright_black = "#626262"
+bright_red = "#E06C75"
+bright_green = "#84B884"
+bright_yellow = "#E5C07B"
+bright_blue = "#A2B5C1"
+bright_magenta = "#C678DD"
+bright_cyan = "#60B197"
+bright_white = "#F9F8F5"
+
+[themes.component_style]
+block_title = { fg = "#60B197" }
+border = { fg = "#525252" }
+playback_status = { fg = "#85B884", modifiers = ["Bold"] }
+playback_track = { fg = "#85B884", modifiers = ["Bold"] }
+playback_artists = { fg = "#B49273" }
+playback_album = {}
+playback_metadata = { fg = "#626262" }
+playback_progress_bar = { bg = "#202020", fg = "#85B884" }
+current_playing = { fg = "#85B884" }
+page_desc = { fg = "#85B884", modifiers = ["Bold"] }
+playlist_desc = { fg = "#525252", modifiers = ["Dim"] }
+table_header = { fg = "#525252" }
+secondary_row = {}
+selection = { bg = "#161716", modifiers = ["Bold"] }
+like = { fg = "#525252" }
+lyrics_played = { modifiers = ["Dim"] }
