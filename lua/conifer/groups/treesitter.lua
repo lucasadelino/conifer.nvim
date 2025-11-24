@@ -54,7 +54,7 @@ function M.highlight(aspects, opts)
     ["@markup.list"] = { fg = aspects.fg1 },
     ["@markup.list.unchecked"] = { fg = aspects.fg1 },
     ["@markup.literal"] = { fg = aspects.fog },
-    ["@markup.strong"] = { fg = aspects.leaf },
+    ["@markup.strong"] = { bold = true },
     ["@markup.title"] = { fg = aspects.fog },
     ["@markup.underline"] = { underline = true },
     ["@markup.heading"] = { fg = aspects.moss },
