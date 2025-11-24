@@ -1,6 +1,6 @@
 # Conifer
 
-A woodsy Neovim colorscheme
+A woodsy colorscheme for Neovim and friends.
 
 <p align="center">
   <img
@@ -17,11 +17,14 @@ A woodsy Neovim colorscheme
 - A fuller color palette for UI elements, to draw your eye
 - A muted color palette for diagnostic virtual text, to get out of your way
 - A light mode, for the occasional times we venture outside of our caves.
-- Support for several popular plugins out-of-the-box.
+- Support for several popular Neovim plugins, and for
+  [a handful](https://github.com/lucasadelino/conifer.nvim/tree/main/extras)
+  of terminal-related tools.
 
 ## Installation
 
-Install Conifer with your favorite plugin manager. For instance, for [lazy.nvim](https://github.com/folke/lazy.nvim):
+Install Conifer with your favorite plugin manager. For instance, with
+[lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 {
