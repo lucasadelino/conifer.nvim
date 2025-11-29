@@ -14,8 +14,8 @@ function M.highlight(aspects, opts)
 
   local cursor_bg = aspects.bg2
   if opts.variant == "lunar" and opts.transparent == true then
-    -- Slightly darken cursorline
-    cursor_bg = aspects.bg1
+    -- Darken cursorline
+    cursor_bg = aspects.bg0
   end
 
   return {
