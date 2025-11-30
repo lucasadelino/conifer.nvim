@@ -1,10 +1,10 @@
 local M = {}
 
 ---@param palette Colors
-function M.highlight(aspects)
+function M.highlight(palette)
   return {
-    YankyPut = { fg = aspects.acorn, bg = aspects.bg0 },
-    YankyYanked = { fg = aspects.bg0, bg = aspects.acorn },
+    YankyPut = { fg = palette.acorn, bg = palette.bg0 },
+    YankyYanked = { fg = palette.bg0, bg = palette.acorn },
   }
 end
 
