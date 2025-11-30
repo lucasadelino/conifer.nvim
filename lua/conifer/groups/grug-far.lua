@@ -15,9 +15,7 @@ function M.highlight(palette, opts)
     GrugFarResultsPath = { bold = true, bg = bg0 },
     GrugFarResultsAddIndicator = { fg = palette.sign_add },
     GrugFarResultsChangeIndicator = { fg = palette.sign_change },
-    GrugFarHelpHeader = {
-      fg = palette.bg6,
-    },
+    GrugFarHelpHeader = { fg = palette.bg6 },
     GrugFarHelpHeaderKey = { fg = palette.medium_green },
     GrugFarHelpWinActionDescription = { fg = palette.fg3 },
     GrugFarHelpWinActionText = { fg = palette.fg1 },
@@ -25,8 +23,6 @@ function M.highlight(palette, opts)
     GrugFarHelpWinHeader = { fg = palette.leaf, bold = true },
     GrugFarHelpWinActionKey = { fg = palette.leaf },
     GrugFarInputPlaceholder = { fg = palette.bg4 },
-    -- GrugFarResultsMatch = { fg = palette.bright_orange, bg = palette.bg1, },
-    -- GrugFarResultsMatch = { fg = palette.bright_orange, bg = palette.bg1, },
     GrugFarResultsRemoveIndicator = { fg = palette.sign_delete },
   }
 end
