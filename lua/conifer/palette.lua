@@ -51,7 +51,7 @@ local colors = {
   dark_red = "#924843",
   darker_red = "#5b2b28",
   dark_yellow = "#666538",
-  medium_green = "#578266",
+  medium_green = "#5F815E",
   -- Misc
   cursor_fg = "#151515",
   cursor_bg = "#727272",
