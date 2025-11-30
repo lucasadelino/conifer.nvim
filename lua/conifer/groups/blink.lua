@@ -17,6 +17,8 @@ function M.highlight(palette)
     BlinkCmpMenuBorder = { fg = palette.fg0 },
     BlinkCmpMenuSelection = { bg = palette.bg2 },
     BlinkCmpSource = { fg = palette.bg6 },
+    BlinkIndent = { fg = palette.bg4 },
+    BlinkIndentScope = { fg = palette.fg3 },
   }
 end
 
