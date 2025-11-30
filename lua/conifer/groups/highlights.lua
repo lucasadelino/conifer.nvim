@@ -136,7 +136,7 @@ function M.highlight(aspects, opts)
     Structure = { fg = aspects.moss },
     Substitute = { fg = aspects.bg1, bg = aspects.bright_orange },
     TabLine = { fg = aspects.bg4, bg = background },
-    TabLineFill = { fg = aspects.fg0, bg = background },
+    TabLineFill = { fg = aspects.bg1, bg = background },
     TabLineSel = { fg = aspects.fg0, bg = background },
     Tag = { fg = aspects.bud },
     TermCursor = {
