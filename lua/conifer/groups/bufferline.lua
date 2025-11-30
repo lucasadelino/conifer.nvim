@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette, opts)
   local fg = opts.variant == "solar" and palette.fg4 or palette.bg6
 

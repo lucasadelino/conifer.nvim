@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette, opts)
   return {
     ["@org.headline.level1"] = { link = "Title", default = true },

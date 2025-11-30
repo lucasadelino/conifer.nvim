@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette)
   return {
     ["@markup.heading.1.markdown"] = { fg = palette.moss, bold = true },

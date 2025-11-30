@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(aspects, opts)
   return {
     ["@annotation"] = { fg = aspects.fg1 },

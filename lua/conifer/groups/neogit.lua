@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette, opts)
   local bg = palette.none
   local bg0 = palette.bg0

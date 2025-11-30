@@ -1,5 +1,6 @@
 local M = {}
 
+---@param aspects Colors
 function M.highlight(aspects)
   return {
     NotificationError = { fg = aspects.sign_delete, bg = aspects.bg1 },

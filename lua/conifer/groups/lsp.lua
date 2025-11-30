@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette, opts)
   return {
     DiagnosticError = { fg = palette.error },

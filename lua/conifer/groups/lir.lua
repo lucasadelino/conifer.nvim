@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette)
   return {
     LirDir = { fg = palette.fg0 },

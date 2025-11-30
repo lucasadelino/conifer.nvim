@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette)
   return {
     MiniStatuslineDevinfo = { fg = palette.bg6, bg = palette.bg },

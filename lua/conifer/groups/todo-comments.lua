@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette)
   return {
     TodoBgFIX = { fg = palette.bg0, bg = palette.darker_red, bold = true },

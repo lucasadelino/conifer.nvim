@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(colors)
   return {
     MiniIconsAzure = { fg = colors.azure },

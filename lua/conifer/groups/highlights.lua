@@ -1,4 +1,6 @@
 local M = {}
+
+---@param palette Colors
 function M.highlight(aspects, opts)
   local background = opts.transparent and aspects.none or aspects.bg0
   local background1 = opts.transparent and aspects.none or aspects.bg1

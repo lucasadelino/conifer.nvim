@@ -1,6 +1,7 @@
 local M = {}
 
-function M.highlight(palette, _)
+---@param palette Colors
+function M.highlight(palette)
   return {
     BlinkCmpDoc = { bg = palette.bg2 },
     BlinkCmpDocBorder = { bg = palette.bg2 },

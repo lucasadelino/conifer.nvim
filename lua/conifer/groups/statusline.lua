@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette, opts)
   return {
     StatusLine = { fg = palette.bg4, bg = palette.bg0 },

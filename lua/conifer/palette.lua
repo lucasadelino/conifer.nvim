@@ -1,5 +1,6 @@
 -- stylua: ignore
 
+---@class Colors
 local colors = {
   -- CODE COLORS
   -- Fore and background

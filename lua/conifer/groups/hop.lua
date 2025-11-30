@@ -1,5 +1,6 @@
 local M = {}
 
+---@param palette Colors
 function M.highlight(palette, opts)
   return {
     HopNextKey = { fg = palette.cyan, bold = true },
