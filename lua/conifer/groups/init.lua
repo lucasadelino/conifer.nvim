@@ -6,6 +6,7 @@ return {
   require "conifer.groups.dapui",
   require "conifer.groups.dropbar",
   require "conifer.groups.git",
+  require "conifer.groups.grug-far",
   require "conifer.groups.highlights",
   require "conifer.groups.hop",
   require "conifer.groups.lazy",
