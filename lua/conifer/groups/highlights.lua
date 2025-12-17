@@ -27,6 +27,7 @@ function M.highlight(palette, opts)
     },
     Character = { fg = palette.green },
     ColorColumn = { bg = palette.bg1 },
+    -- ColorColumn = { bg = background1 },
     Comment = vim.tbl_extend("force", { fg = palette.bg6 }, opts.styles.comments),
     Conceal = { fg = palette.fg1 },
     Conditional = { fg = palette.moss },
@@ -35,7 +36,11 @@ function M.highlight(palette, opts)
       link = "Comment",
     },
     CurSearch = { fg = palette.bg1, bg = palette.bright_orange, bold = true },
-    Cursor = { fg = palette.cursor_fg, bg = palette.cursor_bg },
+    -- Cursor = { fg = palette.cursor_fg, bg = palette.red },
+    -- Cursor = { fg = palette.bg0, bg = palette.fg2, blend = 100 },
+    Cursor = { fg = palette.bg0, bg = palette.fg2 },
+    MultiCursor = { fg = palette.bg0, bg = palette.fg4 },
+    CursorHidden = { blend = 100 },
     CursorColumn = { bg = palette.bg1 },
     CursorIM = { fg = palette.cursor_fg, bg = palette.cursor_bg },
     CursorLine = {
@@ -59,8 +64,8 @@ function M.highlight(palette, opts)
     Directory = { fg = palette.green },
     EndOfBuffer = { fg = palette.bg4 },
     Error = { fg = palette.error, bg = palette.bg0, bold = true },
-    ErrorMsg = { fg = palette.fg1, bg = background, bold = true },
-    FloatBorder = { fg = palette.bg6 },
+    FloatBorder = { fg = palette.bg5 },
+    FloatTitle = { fg = palette.green },
     FoldColumn = { fg = palette.fg3, bg = palette.bg1 },
     Folded = { fg = palette.fg3, bg = palette.bg1 },
     Function = vim.tbl_extend("force", { fg = palette.leaf }, opts.styles.functions),
@@ -87,19 +92,14 @@ function M.highlight(palette, opts)
     MatchParenCur = { underline = true },
     MatchWord = { underline = true },
     MatchWordCur = { underline = true },
-    ModeMsg = { fg = palette.fg1, bg = palette.bg0 },
-    MoreMsg = { fg = palette.leaf },
-    MsgArea = {
-      fg = palette.fg1,
-      bg = background,
-    },
-    MsgSeparator = { fg = palette.fg1, bg = palette.bg0 },
     NonText = { fg = palette.fg1 },
     Normal = {
       fg = palette.fg1,
       bg = background1,
     },
     NormalFloat = {
+      -- fg = palette.fg3,
+      fg = palette.fg2,
       bg = opts.transparent and palette.none or palette.bg1,
     },
     NormalNC = {
@@ -159,7 +159,6 @@ function M.highlight(palette, opts)
     VertSplit = { fg = palette.bg0, bg = palette.bg2 },
     Visual = { bg = palette.bg4 },
     VisualNOS = { bg = palette.bg1 },
-    WarningMsg = { fg = palette.yellow, bg = background1 },
     Whitespace = { fg = palette.bg4 },
     WildMenu = { fg = palette.bud, bg = palette.bg1 },
     WinBar = {
@@ -180,6 +179,21 @@ function M.highlight(palette, opts)
       fg = palette.bg6,
       bg = background1,
     },
+    -- Messages
+    -- ErrorMsg = { fg = palette.error, bg = background, bold = true },
+    ErrorMsg = { fg = palette.error, bg = background },
+    ModeMsg = { fg = palette.fg1, bg = palette.bg0 },
+    MoreMsg = { fg = palette.leaf },
+    MsgArea = {
+      fg = palette.fg1,
+      bg = palette.bg0,
+    },
+    MsgSeparator = { fg = palette.bg2, bg = background1 },
+    WarningMsg = { fg = palette.warning, bg = background1 },
+    -- WarningMsg = { fg = palette.yellow, bg = background1, bold = true },
+    -- MsgSeparator = { fg = palette.fg1, bg = palette.bg0 },
+    -- MsgSeparator = { fg = palette.bg3 },
+    -- MsgSeparator = { fg = palette.bg5, bg = palette.bg0 },
   }
 end
 
