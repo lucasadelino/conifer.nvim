@@ -3,9 +3,9 @@ local M = {}
 ---@param palette Colors
 function M.highlight(palette)
   return {
-    BlinkCmpDoc = { bg = palette.bg2 },
-    BlinkCmpDocBorder = { bg = palette.bg2 },
-    BlinkCmpDocSeparator = { bg = palette.bg2 },
+    BlinkCmpDoc = { fg = palette.fg2 },
+    BlinkCmpDocBorder = { fg = palette.bg4 },
+    BlinkCmpDocSeparator = { fg = palette.bg3 },
     BlinkCmpGhostText = { fg = palette.bg6 },
     BlinkCmpKind = { fg = palette.fg3 },
     BlinkCmpLabel = { fg = palette.fg0 },
