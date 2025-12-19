@@ -1,7 +1,7 @@
 local M = {}
 
 ---@param palette Colors
-function M.highlight(palette, opts)
+function M.highlight(palette)
   return {
     DiagnosticError = { fg = palette.error },
     DiagnosticHint = { fg = palette.moss },
@@ -15,27 +15,11 @@ function M.highlight(palette, opts)
     DiagnosticVirtualTextHint = { fg = palette.dark_green },
     DiagnosticVirtualTextInfo = { fg = palette.dark_blue },
     DiagnosticVirtualTextWarn = { fg = palette.dark_yellow },
-    DiagnosticUnderlineError = vim.tbl_extend(
-      "force",
-      { sp = palette.error },
-      opts.styles.lsp
-    ),
-    DiagnosticUnderlineHint = vim.tbl_extend(
-      "force",
-      { sp = palette.hint },
-      opts.styles.lsp
-    ),
-    DiagnosticUnderlineInfo = vim.tbl_extend(
-      "force",
-      { sp = palette.blue },
-      opts.styles.lsp
-    ),
-    DiagnosticUnderlineWarn = vim.tbl_extend(
-      "force",
-      { sp = palette.warning },
-      opts.styles.lsp
-    ),
-    LspCodeLens = { fg = palette.comment },
+    DiagnosticUnderlineError = { sp = palette.error, undercurl = true },
+    DiagnosticUnderlineHint = { sp = palette.hint, undercurl = true },
+    DiagnosticUnderlineInfo = { sp = palette.blue, undercurl = true },
+    DiagnosticUnderlineWarn = { sp = palette.sign_change, undercurl = true },
+    LspCodeLens = { fg = palette.info },
     LspInlayHint = { fg = palette.lichen },
     LspInfoBoarder = { fg = palette.fg3, bg = palette.hint },
     LspReferenceRead = { bg = palette.bg3 },
