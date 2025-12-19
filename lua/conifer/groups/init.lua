@@ -5,6 +5,7 @@ return {
   require "conifer.groups.dadbod-ui",
   require "conifer.groups.dapui",
   require "conifer.groups.dropbar",
+  require "conifer.groups.fzf",
   require "conifer.groups.git",
   require "conifer.groups.grug-far",
   require "conifer.groups.highlights",
