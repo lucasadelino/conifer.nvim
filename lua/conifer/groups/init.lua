@@ -16,6 +16,7 @@ return {
   require "conifer.groups.lsp",
   require "conifer.groups.markdown",
   require "conifer.groups.mason",
+  require "conifer.groups.mini",
   require "conifer.groups.mini-icons",
   require "conifer.groups.mini-statusline",
   require "conifer.groups.neogit",
