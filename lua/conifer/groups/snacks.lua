@@ -18,6 +18,7 @@ function M.highlight(palette)
     SnacksPickerToggle = { fg = palette.bark },
     SnacksScratchDesc = { fg = palette.fg1 },
     SnacksScratchKey = { fg = palette.bark },
+    SnacksStatusColumnMark = { fg = palette.bg4 },
   }
 end
 
