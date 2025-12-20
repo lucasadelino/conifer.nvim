@@ -89,7 +89,7 @@ function M.highlight(palette, opts)
     MatchParenCur = { underline = true },
     MatchWord = { underline = true },
     MatchWordCur = { underline = true },
-    NonText = { fg = palette.fg1 },
+    NonText = { fg = palette.bg4 },
     Normal = {
       fg = palette.fg1,
       bg = background1,
