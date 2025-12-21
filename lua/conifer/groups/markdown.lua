@@ -29,12 +29,12 @@ function M.highlight(palette)
     markdownUrl = { fg = palette.azure, underline = true },
     ObsidianExtLinkIcon = { fg = palette.blue },
     RenderMarkdownCodeInline = { bg = palette.bg0, fg = palette.stone },
-    RenderMarkdownH1Bg = { bold = true },
-    RenderMarkdownH2Bg = { link = "DiffAdd" },
-    RenderMarkdownH3Bg = { link = "DiffAdd" },
-    RenderMarkdownH4Bg = { link = "DiffAdd" },
-    RenderMarkdownH5Bg = { link = "DiffAdd" },
-    RenderMarkdownH6Bg = { link = "DiffAdd" },
+    RenderMarkdownH1Bg = { bg = palette.accent_green, fg = palette.moss, bold = true },
+    RenderMarkdownH2Bg = { bg = palette.accent_green, fg = palette.moss },
+    RenderMarkdownH3Bg = { bg = palette.accent_green, fg = palette.moss },
+    RenderMarkdownH4Bg = { bg = palette.accent_green, fg = palette.moss },
+    RenderMarkdownH5Bg = { bg = palette.accent_green, fg = palette.moss },
+    RenderMarkdownH6Bg = { bg = palette.accent_green, fg = palette.moss },
   }
 end
 
