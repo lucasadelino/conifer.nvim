@@ -7,7 +7,7 @@ function M.highlight(palette)
     WhichKeyDesc = { fg = palette.fg3 },
     WhichKeyFloat = { bg = palette.bg0 },
     WhichKeyGroup = { fg = palette.leaf },
-    WhichKeySeparator = { fg = palette.fg3 },
+    WhichKeySeparator = { fg = palette.bg5 },
   }
 end
 
