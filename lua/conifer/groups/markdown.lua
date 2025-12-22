@@ -35,6 +35,7 @@ function M.highlight(palette)
     RenderMarkdownH4Bg = { bg = palette.accent_green, fg = palette.moss },
     RenderMarkdownH5Bg = { bg = palette.accent_green, fg = palette.moss },
     RenderMarkdownH6Bg = { bg = palette.accent_green, fg = palette.moss },
+    RenderMarkdownChecked = { fg = palette.bg6 },
   }
 end
 
