@@ -7,6 +7,10 @@ function M.highlight(palette)
     MiniClueDescSingle = { fg = palette.fg4 },
     MiniClueNextKey = { fg = palette.fg3 },
     MiniClueSeparator = { fg = palette.bg4 },
+    MiniDiffSignAdd = { fg = palette.sign_add },
+    MiniDiffSignChange = { fg = palette.sign_change },
+    MiniDiffSignDelete = { fg = palette.sign_delete },
+    GitSignsCurrentLineBlame = { fg = palette.bg4 },
     MiniHipatternsFixme = { fg = palette.bg0, bg = palette.dark_red, bold = true },
     -- TODO: Change this color's name to `medium orange` or smth
     MiniHipatternsHack = { fg = palette.bg0, bg = palette.info, bold = true },
