@@ -53,6 +53,11 @@ function M.load(opts)
     group = group.highlight(palette, opts)
     util.initialise(group)
   end
+
+  local custom_groups = opts.custom_groups
+  if custom_groups then
+    util.initialise(custom_groups)
+  end
 end
 
 M.setup = config.setup
