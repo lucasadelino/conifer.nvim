@@ -12,6 +12,7 @@ local DEFAULT = {
     type = {},
     variables = {},
   },
+  custom_groups = {},
 }
 
 M.opts = {}
