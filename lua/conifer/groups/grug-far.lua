@@ -1,9 +1,9 @@
 local M = {}
 
 ---@param palette Colors
-function M.highlight(palette, opts)
+function M.highlight(palette, opts, transparent)
   local bg0 = palette.bg0
-  if not opts.transparent then
+  if not transparent then
     if opts.variant == "solar" then
       bg0 = palette.bg3
     else

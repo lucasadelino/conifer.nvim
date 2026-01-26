@@ -1,12 +1,12 @@
 local M = {}
 
 ---@param palette Colors
-function M.highlight(palette, opts)
-  local background = opts.transparent and palette.none or palette.bg0
-  local background1 = opts.transparent and palette.none or palette.bg1
+function M.highlight(palette, opts, transparent)
+  local background = transparent and palette.none or palette.bg0
+  local background1 = transparent and palette.none or palette.bg1
 
   local dim_bg = palette.none
-  if not opts.transparent then
+  if not transparent then
     if opts.variant == "solar" then
       dim_bg = palette.bg2
     else
@@ -15,7 +15,7 @@ function M.highlight(palette, opts)
   end
 
   local cursor_bg = palette.bg2
-  if opts.variant == "lunar" and opts.transparent == true then
+  if opts.variant == "lunar" and transparent == true then
     -- Darken cursorline
     cursor_bg = palette.bg0
   end
@@ -96,7 +96,7 @@ function M.highlight(palette, opts)
     },
     NormalFloat = {
       fg = palette.fg2,
-      bg = opts.transparent and palette.none or palette.bg1,
+      bg = transparent and palette.none or palette.bg1,
     },
     NormalNC = {
       fg = palette.fg1,
