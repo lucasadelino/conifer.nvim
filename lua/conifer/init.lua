@@ -4,12 +4,8 @@ local M = {}
 function M.load(opts)
   opts = config.extend(opts)
 
-  local transparent = opts.transparent
-  local palette
-  local name
   local background = vim.o.background
   local style_bg = opts.variant == "solar" and "light" or "dark"
-
   -- Check for a mismatch between `vim.o.background` and the expected bg color
   -- for the current variant
   if background ~= style_bg then
@@ -29,6 +25,9 @@ function M.load(opts)
     end
   end
 
+  local palette
+  local name
+  local transparent = opts.transparent
   if opts.variant == "solar" then
     palette = require "conifer.palette-solar"
     name = "conifer-solar"
