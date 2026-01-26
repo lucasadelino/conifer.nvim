@@ -4,6 +4,7 @@ local M = {}
 function M.load(opts)
   opts = config.extend(opts)
 
+  local transparent = opts.transparent
   local palette
   local name
   local background = vim.o.background
@@ -23,16 +24,10 @@ function M.load(opts)
   if opts.variant == "solar" then
     palette = require "conifer.palette-solar"
     name = "conifer-solar"
-    opts.transparent = false
+    transparent = false
   else
     palette = require "conifer.palette"
     name = "conifer"
-
-    if opts.transparent == nil then
-      opts.transparent = true
-    else
-      opts.transparent = config.opts.transparent
-    end
   end
 
   if vim.g.colors_name then
@@ -50,7 +45,7 @@ function M.load(opts)
   local groups = require "conifer.groups"
 
   for _, group in ipairs(groups) do
-    group = group.highlight(palette, opts)
+    group = group.highlight(palette, opts, transparent)
     util.initialise(group)
   end
 

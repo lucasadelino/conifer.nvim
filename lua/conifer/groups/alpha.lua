@@ -1,7 +1,7 @@
 local M = {}
 
 ---@param palette Colors
-function M.highlight(palette, opts)
+function M.highlight(palette, opts, transparent)
   return {
     AlphaButtons = { fg = palette.bg6 },
     AlphaHeader = { fg = palette.gray_blue },
