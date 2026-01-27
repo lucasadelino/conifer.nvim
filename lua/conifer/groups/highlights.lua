@@ -27,7 +27,6 @@ function M.highlight(palette, opts)
     },
     Character = { fg = palette.green },
     ColorColumn = { bg = palette.bg1 },
-    -- ColorColumn = { bg = background1 },
     Comment = vim.tbl_extend("force", { fg = palette.bg6 }, opts.styles.comments),
     Conceal = { fg = palette.fg1 },
     Conditional = { fg = palette.moss },
@@ -36,8 +35,6 @@ function M.highlight(palette, opts)
       link = "Comment",
     },
     CurSearch = { fg = palette.bg1, bg = palette.bright_orange, bold = true },
-    -- Cursor = { fg = palette.cursor_fg, bg = palette.red },
-    -- Cursor = { fg = palette.bg0, bg = palette.fg2, blend = 100 },
     Cursor = { fg = palette.bg0, bg = palette.fg2 },
     MultiCursor = { fg = palette.bg0, bg = palette.fg4 },
     CursorHidden = { blend = 100 },
@@ -98,7 +95,6 @@ function M.highlight(palette, opts)
       bg = background1,
     },
     NormalFloat = {
-      -- fg = palette.fg3,
       fg = palette.fg2,
       bg = opts.transparent and palette.none or palette.bg1,
     },
@@ -180,7 +176,6 @@ function M.highlight(palette, opts)
       bg = background1,
     },
     -- Messages
-    -- ErrorMsg = { fg = palette.error, bg = background, bold = true },
     ErrorMsg = { fg = palette.error, bg = background },
     ModeMsg = { fg = palette.fg1, bg = palette.bg0 },
     MoreMsg = { fg = palette.leaf },
@@ -190,10 +185,6 @@ function M.highlight(palette, opts)
     },
     MsgSeparator = { fg = palette.bg2, bg = background1 },
     WarningMsg = { fg = palette.warning, bg = background1 },
-    -- WarningMsg = { fg = palette.yellow, bg = background1, bold = true },
-    -- MsgSeparator = { fg = palette.fg1, bg = palette.bg0 },
-    -- MsgSeparator = { fg = palette.bg3 },
-    -- MsgSeparator = { fg = palette.bg5, bg = palette.bg0 },
   }
 end
 
