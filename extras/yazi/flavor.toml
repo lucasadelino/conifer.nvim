@@ -1,10 +1,6 @@
 [mgr]
 cwd = { fg = "#85B884" }
 
-# Hovered
-hovered = { bg = "#161716", bold = true }
-preview_hovered = { underline = false }
-
 # Find
 find_keyword = { fg = "#161716", bg = "#D19B6E", bold = true }
 find_position = { fg = "#727272", bg = "reset" }
@@ -27,6 +23,15 @@ count_selected = { fg = "#D6BD87", bold = true }
 # Border
 border_symbol = "│"
 border_style = { fg = "#525252" }
+
+# : Indicator {{{
+
+[indicator]
+current = { bg = "#151515", bold = true }
+parent = { bg = "#282828", bold = true }
+preview = { bg = "#282828", bold = true }
+
+# : }}}
 
 # : Tabs {{{
 
@@ -189,8 +194,8 @@ rules = [
   { name = "*", is = "exec", fg = "#85B884" },
 
   # Fallback
-  { url = "*", fg = "#FFF000", bold = true },
-  { url = "*/", fg = "#FF0000", bold = true },
+  { url = "*", fg = "#B5B5B5" },
+  { url = "*/", fg = "#BDBBAF" },
 ]
 
 # : }}}
