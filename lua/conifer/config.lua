@@ -3,15 +3,6 @@ local M = {}
 local DEFAULT = {
   variant = "lunar",
   transparent = true,
-  styles = {
-    comments = {},
-    functions = {},
-    keywords = {},
-    lsp = {},
-    match_paren = {},
-    type = {},
-    variables = {},
-  },
   custom_groups = {},
 }
 
