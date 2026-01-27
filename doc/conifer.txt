@@ -52,16 +52,12 @@ Conifer has a few options for configuration. The defaults are:
   require("conifer").setup({
     variant = "lunar", -- Prefer dark theme; change to "solar" for light
     transparent = true, -- Whether to set the bg color for the lunar variant
-    styles = { -- Override Conifer's highlights
+    custom_groups = { -- Override Conifer's highlights
+      -- For instance:
+      -- ["@boolean"] = { fg = "#FF0000" }
+      -- Number = { bg = "#000FFF" }
       -- See `:h nvim_set_hl` for syntax
-      comments = {},
-      functions = {},
-      keywords = {},
-      lsp = {},
-      match_paren = {},
-      type = {},
-      variables = {},
-    },
+    }
   })
 <
 
