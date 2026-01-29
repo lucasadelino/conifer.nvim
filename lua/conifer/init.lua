@@ -56,7 +56,7 @@ function M.load(opts)
     util.initialise(group)
   end
 
-  local custom_groups = opts.custom_groups
+  local custom_groups = opts.custom_groups(palette, opts, transparent)
   if custom_groups then
     util.initialise(custom_groups)
   end

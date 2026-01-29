@@ -3,7 +3,8 @@ local M = {}
 local DEFAULT = {
   variant = "lunar",
   transparent = true,
-  custom_groups = {},
+  ---@diagnostic disable-next-line:unused-local
+  custom_groups = function(palette, opts, transparent) end,
 }
 
 M.opts = nil
