@@ -25,24 +25,16 @@ function M.highlight(palette, opts)
       bold = true,
     },
     ["@error"] = { fg = palette.error },
-    ["@function"] = vim.tbl_extend(
-      "force",
-      { fg = palette.leaf },
-      opts.styles.functions
-    ),
+    ["@function"] = { fg = palette.leaf },
     ["@function.builtin"] = { fg = palette.leaf },
     ["@function.macro"] = { fg = palette.leaf },
     ["@function.method"] = { fg = palette.leaf },
     ["@function.method.call"] = { fg = palette.leaf },
-    ["@keyword"] = vim.tbl_extend("force", { fg = palette.moss }, opts.styles.keywords),
+    ["@keyword"] = { fg = palette.moss },
     ["@keyword.conditional"] = { fg = palette.moss },
     ["@keyword.coroutine"] = { fg = palette.moss },
     ["@keyword.exception"] = { fg = palette.bark },
-    ["@keyword.function"] = vim.tbl_extend(
-      "force",
-      { fg = palette.moss },
-      opts.styles.keywords
-    ),
+    ["@keyword.function"] = { fg = palette.moss },
     ["@keyword.import"] = { fg = palette.bark },
     ["@keyword.operator"] = { fg = palette.moss },
     ["@keyword.repeat"] = { fg = palette.moss },
@@ -76,13 +68,9 @@ function M.highlight(palette, opts)
     ["@tag.attribute"] = { fg = palette.fg1 },
     ["@tag.delimiter"] = { fg = palette.fg1 },
     ["@text.uri"] = { fg = palette.fg3 },
-    ["@type"] = vim.tbl_extend("force", { fg = palette.mist }, opts.styles.type),
+    ["@type"] = { fg = palette.mist },
     ["@type.builtin"] = { fg = palette.mist },
-    ["@variable"] = vim.tbl_extend(
-      "force",
-      { fg = palette.fg1 },
-      opts.styles.variables
-    ),
+    ["@variable"] = { fg = palette.fg1 },
     ["@variable.builtin"] = { fg = palette.fg1 },
     ["@variable.field"] = { fg = palette.fg1 },
     ["@variable.parameter"] = { fg = palette.fg1 },
