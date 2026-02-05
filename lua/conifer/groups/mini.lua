@@ -15,8 +15,8 @@ function M.highlight(palette)
     MiniHipatternsHack = { fg = palette.bg0, bg = palette.info, bold = true },
     -- TODO: Make another blue color that's juuuust a touch darker
     -- MiniHipatternsNote = { fg = palette.bg0, bg = palette.blue, bold = true },
-    MiniHipatternsNote = { fg = palette.bg0, bg = palette.todo, bold = true },
-    MiniHipatternsTodo = { fg = palette.bg0, bg = palette.bg6, bold = true },
+    MiniHipatternsNote = { fg = palette.bg0, bg = palette.bg6, bold = true },
+    MiniHipatternsTodo = { fg = palette.bg0, bg = palette.todo, bold = true },
   }
 end
 

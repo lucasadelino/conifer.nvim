@@ -15,7 +15,6 @@ function M.highlight(palette)
     SnacksPickerDir = { fg = palette.bg5 },
     SnacksPickerGitStatusAdded = { fg = palette.sign_add },
     SnacksPickerGitStatusModified = { fg = palette.sign_change },
-    -- SnacksPickerGitStatusUntracked = { fg = palette.sign_change },
     SnacksPickerGitStatusUntracked = { fg = palette.moss },
     SnacksPickerMatch = { bold = true, underline = true },
     SnacksPickerPrompt = { fg = palette.leaf },
