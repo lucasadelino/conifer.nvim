@@ -58,7 +58,7 @@ function M.highlight(palette, opts, transparent)
     },
     DiffDelete = { fg = palette.sign_delete, bg = palette.accent_red },
     DiffText = { fg = palette.fg1, bg = palette.bg4 },
-    Directory = { fg = palette.green },
+    Directory = { fg = palette.stone },
     EndOfBuffer = { fg = palette.bg4 },
     Error = { fg = palette.error, bg = palette.bg0, bold = true },
     FloatBorder = { fg = palette.bg5 },
