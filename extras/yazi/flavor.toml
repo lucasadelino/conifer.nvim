@@ -190,8 +190,8 @@ rules = [
   { mime = "application/{pdf,doc,rtf}", fg = "#C09792" },
 
   # Special files
-  { name = "*", is = "orphan", fg = "#D7867D", crossed = true },
-  { name = "*", is = "exec", fg = "#85B884" },
+  { url = "*", is = "orphan", fg = "#D7867D", crossed = true },
+  { url = "*", is = "exec", fg = "#85B884" },
 
   # Fallback
   { url = "*", fg = "#B5B5B5" },
